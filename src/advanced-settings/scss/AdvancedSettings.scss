@@ -1,100 +1,296 @@
-@import "variables";
+/* ===========================================================
+   CUSC Advanced Settings – VIP Pro Blue (clean, finalized)
+   Áp cho AdvancedSettings.jsx (Course Authoring MFE)
+   =========================================================== */
 
+@import "./variables";
+
+/* ---------------- Palette (scoped) ---------------- */
 .advanced-settings {
-  .help-sidebar {
-    margin-top: 8.75rem;
+  --cusc-blue: #0B5ED7;
+  --cusc-blue-600: #0A54C1;
+  --cusc-blue-50: rgba(11, 94, 215, .06);
+  --cusc-green: #10B981;
+  --cusc-indigo: #0B3D91;
+
+  --text: #1f2937;
+  --muted: #64748b;
+  --bg: #ffffff;
+  --card: #ffffff;
+  --line: #e6edf4;
+
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 16px;
+  --shadow-1: 0 1px 6px rgba(15, 23, 42, .06);
+  --shadow-2: 0 10px 30px rgba(15, 23, 42, .10);
+
+  color: var(--text);
+}
+
+/* ---------------- Header / Proctoring ---------------- */
+.advanced-settings {
+  .setting-header {
+    margin-bottom: .75rem;
+
+    .pgn__transition-replace {
+      isolation: isolate;
+    }
   }
 
-  .setting-items-policies {
-    .setting-items-deprecated-setting {
-      float: right;
-      margin-bottom: 1.75rem;
-    }
+  .alert-proctoring-error {
+    list-style: none;
+    margin: 0 0 .75rem;
+    padding: .75rem 1rem;
+    background: var(--cusc-blue-50);
+    border: 1px solid var(--line);
+    border-left: 4px solid var(--cusc-blue);
+    border-radius: var(--radius-md);
+  }
+}
 
-    .instructions,
-    strong {
-      color: $text-color-base;
-      font-weight: 400;
+/* ---------------- Help sidebar ---------------- */
+.advanced-settings .help-sidebar {
+  margin-top: 8.75rem;
+  position: sticky;
+  top: 96px;
+}
+
+/* ---------------- Policies block (banner + toggle) ---------------- */
+.advanced-settings .setting-items-policies {
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-md);
+  padding: 16px 18px;
+  box-shadow: var(--shadow-1);
+  margin-bottom: 18px;
+
+  /* Warning banner */
+  .instructions {
+    position: relative;
+    display: flex;
+    align-items: flex-start;
+    gap: .5rem;
+    padding: .625rem .75rem .625rem 2.25rem;
+    margin-bottom: .75rem;
+
+    background: linear-gradient(180deg, rgba(245, 158, 11, .12), rgba(245, 158, 11, .08));
+    border: 1px solid rgba(245, 158, 11, .35);
+    border-left: 4px solid #f59e0b;
+    /* amber */
+    border-radius: 12px;
+
+    color: #{if(global-variable-exists(text-color-base), $text-color-base, #7c5600)};
+    font-weight: 500;
+
+    &::before {
+      content: "!";
+      position: absolute;
+      left: .6rem;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 22px;
+      height: 22px;
+      display: grid;
+      place-items: center;
+      border-radius: 999px;
+      background: #f59e0b;
+      color: #fff;
+      font: 800 14px/1 system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+      box-shadow: 0 1px 2px rgba(0, 0, 0, .08);
     }
   }
 
-  .setting-card {
-    margin-bottom: 1.75rem;
+  /* nhấn mạnh chữ Warning: theo tone amber (không dùng đỏ) */
+  strong {
+    color: red;
+    font-weight: 800;
+  }
 
-    .pgn__card-header .pgn__card-header-title-md {
-      font-size: 1.125rem;
+  .instructions+* {
+    margin-top: .25rem;
+  }
+
+  /* Toggle deprecated */
+  .setting-items-deprecated-setting {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 1.25rem;
+
+    .btn {
+      border-radius: 999px;
+      padding: .45rem .9rem;
+      font-weight: 700;
+      background: #eef5ff;
+      border: 1px solid #cfe2ff;
+      color: var(--cusc-blue);
+      transition: transform .06s, box-shadow .12s, background .12s, border-color .12s;
+    }
+
+    .btn:hover {
+      background: #e3efff;
+      border-color: var(--cusc-blue);
+      box-shadow: 0 6px 14px rgba(11, 94, 215, .18);
+      transform: translateY(-1px);
+    }
+
+    .btn:active {
+      transform: translateY(0);
+      box-shadow: none;
+      filter: brightness(.98);
     }
   }
 }
 
-.alert-toast {
-  position: fixed;
-  bottom: 0;
-  width: 100%;
-  padding: 0 .625rem;
-  z-index: var(--pgn-elevation-modal-zindex);
-}
+/* ---------------- SettingCard list ---------------- */
+.advanced-settings .setting-items-list {
+  margin: 0;
+  padding: 0;
 
-.alert-proctoring-error {
-  list-style: none;
-}
-
-.setting-items-list {
   li {
     list-style: none;
   }
 
-  .form-control {
-    min-height: 2.75rem;
-    flex-grow: 1;
+  .pgn__card {
+    border: 1px solid var(--line);
+    border-radius: var(--radius-md);
+    box-shadow: var(--shadow-1);
+    overflow: hidden;
+    background: var(--card);
+    margin-bottom: 1rem;
   }
 
   .pgn__card-header {
+    display: flex;
+    align-items: center;
+    gap: .75rem;
     padding: 0 0 0 1.5rem;
+    border-bottom: 1px solid var(--line);
+    background: linear-gradient(180deg, rgba(11, 94, 215, .08), transparent);
+
+    .pgn__card-header-content {
+      margin: 1.438rem 0;
+    }
+
+    .pgn__card-header-title-md {
+      font-size: 1.125rem;
+      font-weight: 800;
+      color: var(--cusc-indigo);
+    }
   }
 
   .pgn__card-status {
     padding: .625rem;
   }
 
-  .pgn__card-header-content {
-    margin-top: 1.438rem;
-    margin-bottom: 1.438rem;
+  .form-control {
+    min-height: 2.75rem;
+    flex-grow: 1;
+    border: 1px solid var(--line);
+    background: var(--bg);
+    border-radius: var(--radius-sm);
+    padding: .6rem .7rem;
+    transition: border-color .12s, box-shadow .12s;
+
+    &:focus {
+      border-color: var(--cusc-blue);
+      box-shadow: 0 0 0 4px rgba(11, 94, 215, .12);
+      outline: 0;
+    }
+  }
+
+  textarea.form-control {
+    font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", monospace;
+    font-size: .9375rem;
+    line-height: 1.4;
+    white-space: pre;
+    resize: vertical;
+    background-image: linear-gradient(transparent calc(1.4em - 1px), var(--line) 0);
+    background-size: 100% 1.4em;
+    background-origin: content-box;
+    padding-top: .7rem;
+  }
+
+  label,
+  .field-label {
+    display: inline-block;
+    font-weight: 800;
+    color: var(--cusc-indigo);
+    margin-bottom: .35rem;
+  }
+
+  .form-text,
+  .help-text {
+    color: var(--muted);
+    font-size: .9em;
+    margin-top: .25rem;
   }
 }
 
-.setting-sidebar-supplementary {
-  .setting-sidebar-supplementary-about {
-    .setting-sidebar-supplementary-about-title {
-      font: normal var(--pgn-typography-font-weight-bold) 1.125rem/1.5rem var(--pgn-typography-font-family-base);
-      color: var(--pgn-color-headings-base);
-      margin-bottom: 1.25rem;
-    }
+/* ---------------- Card spacing (wrapper .setting-card) ---------------- */
+.advanced-settings .setting-card {
+  margin-bottom: 1.75rem;
+}
 
-    .setting-sidebar-supplementary-about-descriptions {
-      font: normal var(--pgn-typography-font-weight-normal) .875rem/1.5rem var(--pgn-typography-font-family-base);
-      color: $text-color-base;
-    }
+/* ---------------- Sidebar supplementary ---------------- */
+.setting-sidebar-supplementary {
+
+  .setting-sidebar-supplementary-about-title,
+  .setting-sidebar-supplementary-other-title {
+    font: normal var(--pgn-typography-font-weight-bold) 1.125rem/1.5rem var(--pgn-typography-font-family-base);
+    color: var(--pgn-color-headings-base);
+    margin-bottom: 1.25rem;
   }
 
-  .setting-sidebar-supplementary-other-links ul {
-    list-style: none;
+  .setting-sidebar-supplementary-about-descriptions {
+    font: normal var(--pgn-typography-font-weight-normal) .875rem/1.5rem var(--pgn-typography-font-family-base);
+    color: #{if(global-variable-exists(text-color-base), $text-color-base, var(--muted))};
+  }
+
+  .setting-sidebar-supplementary-other-links {
+    ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
 
     .setting-sidebar-supplementary-other-link {
       font: normal var(--pgn-typography-font-weight-normal) .875rem/1.5rem var(--pgn-typography-font-family-base);
       line-height: 1.5rem;
       color: var(--pgn-color-info-500);
       margin-bottom: .5rem;
-    }
-  }
 
-  .setting-sidebar-supplementary-other-title {
-    font: normal var(--pgn-typography-font-weight-bold) 1.125rem/1.5rem var(--pgn-typography-font-family-base);
-    color: var(--pgn-color-headings-base);
-    margin-bottom: 1.25rem;
+      a {
+        color: inherit;
+        text-decoration: none;
+        border-radius: 6px;
+        padding: 2px 4px;
+        transition: background .12s;
+      }
+
+      a:hover {
+        background: var(--cusc-blue-50);
+      }
+    }
   }
 }
 
+/* ---------------- Toast / Save prompt ---------------- */
+.alert-toast {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  padding: 0 .625rem;
+  z-index: var(--pgn-elevation-modal-zindex);
+
+  .pgn__alert,
+  .pgn__toast {
+    border-radius: var(--radius-md);
+    box-shadow: var(--shadow-2);
+  }
+}
+
+/* ---------------- ModalError ---------------- */
 .modal-error-item {
   list-style: none;
 
@@ -108,6 +304,8 @@
   .modal-error-item-title {
     display: flex;
     align-items: center;
+    font-weight: 700;
+    color: #b91c1c;
   }
 }
 
@@ -117,8 +315,142 @@
   background-color: var(--pgn-color-black);
   filter: drop-shadow(0 2px 4px rgba(0 0 0 / .15));
   font-weight: 400;
+  border-radius: 8px;
+  padding: .5rem .625rem;
 }
 
 .pgn__modal-popup__arrow::after {
   border-top-color: var(--pgn-color-black);
+}
+
+/* ---------------- Buttons ---------------- */
+.advanced-settings {
+
+  .btn,
+  button,
+  .btn-link {
+    border-radius: var(--radius-sm);
+    font-weight: 700;
+    margin-block: 0 !important;
+    transform: translateY(-2px);
+  }
+
+  .btn-primary {
+    background: var(--cusc-blue);
+    border-color: var(--cusc-blue);
+    color: #fff;
+  }
+
+  .btn-primary:hover {
+    filter: brightness(.96);
+    box-shadow: 0 8px 16px rgba(11, 94, 215, .25);
+    transform: translateY(-1px);
+  }
+
+  .btn-outline-brand,
+  .btn-tertiary {
+    color: var(--cusc-blue);
+    border-color: var(--line);
+  }
+
+  .btn-outline-brand:hover,
+  .btn-tertiary:hover {
+    background: var(--cusc-blue-50);
+    border-color: var(--cusc-blue);
+  }
+}
+
+/* ---------------- Optional states ---------------- */
+.advanced-settings .setting-card.is-deprecated .pgn__card {
+  border-left: 4px solid #9CA3AF;
+  opacity: .9;
+}
+
+.advanced-settings .setting-card.is-deprecated .pgn__card-header-title-md::after {
+  content: "Deprecated";
+  margin-left: .5rem;
+  font-size: .75rem;
+  font-weight: 700;
+  color: #6B7280;
+  background: #F3F4F6;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  padding: 2px 8px;
+}
+
+.advanced-settings .setting-card.has-error .form-control {
+  border-color: #ef4444;
+  box-shadow: 0 0 0 4px rgba(239, 68, 68, .15);
+}
+
+.advanced-settings .setting-card.has-error .pgn__card {
+  border-left: 4px solid #ef4444;
+}
+
+/* ---------------- Dark mode ---------------- */
+.theme-dark .advanced-settings {
+  --text: #e5e7eb;
+  --muted: #a3b2c7;
+  --bg: #0b1220;
+  --card: #0f172a;
+  --line: #1f2a44;
+  --shadow-1: 0 1px 6px rgba(0, 0, 0, .35);
+  --shadow-2: 0 10px 30px rgba(0, 0, 0, .45);
+
+  .setting-items-policies,
+  .setting-items-list .pgn__card {
+    background: var(--card);
+    border-color: var(--line);
+  }
+
+  .pgn__card-header {
+    background: linear-gradient(180deg, rgba(11, 94, 215, .12), transparent);
+  }
+
+  .form-control {
+    background: #0b1220;
+    color: var(--text);
+  }
+
+  /* banner amber dịu, không dùng viền đỏ */
+  .setting-items-policies .instructions {
+    background: linear-gradient(180deg, rgba(245, 158, 11, .16), rgba(245, 158, 11, .08));
+    border: 1px solid rgba(245, 158, 11, .35);
+    color: #f9cf86;
+
+    &::before {
+      background: #f59e0b;
+      color: #0b1220;
+    }
+  }
+
+  .setting-items-policies .setting-items-deprecated-setting .btn {
+    background: rgba(11, 94, 215, .14);
+    border-color: rgba(11, 94, 215, .35);
+    color: #b7d4ff;
+  }
+
+  .setting-items-policies .setting-items-deprecated-setting .btn:hover {
+    background: rgba(11, 94, 215, .2);
+    border-color: #6aa8ff;
+  }
+}
+
+/* ---------------- Responsive ---------------- */
+@media (max-width: 991.98px) {
+  .advanced-settings {
+    .help-sidebar {
+      position: static;
+      top: auto;
+      margin-top: 1.25rem;
+    }
+
+    .setting-items-policies {
+      padding: 14px;
+    }
+
+    .setting-items-list .pgn__card-header .pgn__card-header-title-md {
+      font-size: 1.0625rem;
+    }
+  }
 }

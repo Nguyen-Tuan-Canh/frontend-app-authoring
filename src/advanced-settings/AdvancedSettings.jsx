@@ -26,6 +26,7 @@ import messages from './messages';
 import ModalError from './modal-error/ModalError';
 import getPageHeadTitle from '../generic/utils';
 
+
 const AdvancedSettings = ({ courseId }) => {
   const intl = useIntl();
   const dispatch = useDispatch();
