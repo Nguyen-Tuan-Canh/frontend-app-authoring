@@ -53,7 +53,7 @@ const GalleryCard = ({
           </ActionRow>
         )}
       />
-      <Card.Section className="pr-3 pl-3 pt-0 pb-0">
+      <Card.Section className="pgn__card-image pr-3 pl-3 pt-0 pb-0">
         <div className="row align-items-center justify-content-center m-0">
           <FileThumbnail
             thumbnail={original.thumbnail}
@@ -66,14 +66,18 @@ const GalleryCard = ({
             thumbnailPreview={thumbnailPreview}
           />
         </div>
+      </Card.Section>
+
+      <Card.Section className="pgn__card-body pr-3 pl-3 pt-0 pb-0">
         <div style={{ wordBreak: 'break-word' }}>
-          <Truncate.Deprecated lines={1} className="font-weight-bold mt-2 picture-title">
+          <div className="file-title" title={original.displayName} data-testid={`grid-card-title-${original.id}`}>
             {original.displayName}
-          </Truncate.Deprecated>
+          </div>
         </div>
       </Card.Section>
-      <Card.Footer className="p-3 pt-4 row m-0 flex-row-reverse justify-content-between align-items-center">
-        <Chip>
+
+      <Card.Footer className="pgn__card-footer p-3 pt-4 row m-0 flex-row-reverse justify-content-between align-items-center">
+        <Chip className="chip">
           {original.wrapperType}
         </Chip>
         {original.transcripts?.length > 0 && <Icon size="lg" src={ClosedCaption} className="m-0 text-primary-500" />}

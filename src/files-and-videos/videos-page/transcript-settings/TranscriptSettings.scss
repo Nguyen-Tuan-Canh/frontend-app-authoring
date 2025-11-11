@@ -5,4 +5,120 @@
 
 .pgn__sheet-component.right {
   min-width: 352px;
+  background-color: #ffffff;
+  border-left: 1px solid var(--files-border);
+}
+
+.transcript-settings-container {
+  background-color: #ffffff;
+  border: 1px solid var(--files-border);
+  border-radius: 8px;
+  box-shadow: var(--files-shadow);
+}
+
+.transcript-settings-header {
+  background-color: var(--files-bg);
+  border-bottom: 1px solid var(--files-border);
+  padding: 16px;
+  border-radius: 8px 8px 0 0;
+
+  h5 {
+    color: #212529;
+    font-weight: 600;
+    margin: 0;
+    font-size: 16px;
+  }
+}
+
+.transcript-settings-body {
+  background-color: #ffffff;
+  padding: 16px;
+
+  .setting-item {
+    padding: 12px 0;
+    border-bottom: 1px solid #e8f5e9;
+
+    &:last-child {
+      border-bottom: none;
+    }
+
+    .setting-label {
+      font-size: 14px;
+      font-weight: 600;
+      color: #212529;
+      margin-bottom: 8px;
+    }
+
+    .setting-description {
+      font-size: 13px;
+      color: #666666;
+      margin-top: 4px;
+    }
+
+    .pgn__form-control,
+    .pgn__select,
+    input[type="text"],
+    input[type="email"],
+    textarea {
+      width: 100%;
+      padding: 8px 12px;
+      border: 1px solid #d9e7e0;
+      border-radius: 6px;
+      font-size: 14px;
+      color: #212529;
+      background-color: #ffffff;
+      transition: all 0.3s ease;
+
+      &:focus {
+        border-color: var(--files-primary);
+        box-shadow: 0 0 0 3px rgba(var(--files-primary-rgb), 0.1);
+        outline: none;
+      }
+
+      &:disabled {
+        background-color: #f6fdf8;
+        color: #999999;
+        cursor: not-allowed;
+      }
+    }
+  }
+}
+
+.transcript-settings-footer {
+  background-color: var(--files-bg);
+  border-top: 1px solid var(--files-border);
+  padding: 12px 16px;
+  border-radius: 0 0 8px 8px;
+  display: flex;
+  gap: 12px;
+  justify-content: flex-end;
+
+  button {
+    padding: 8px 16px;
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    border: none;
+
+    &.btn-primary {
+      background-color: #1fb171;
+      color: #ffffff;
+
+      &:hover {
+        background-color: #17945f;
+      }
+    }
+
+    &.btn-secondary {
+      background-color: #ffffff;
+      color: #1fb171;
+      border: 1px solid #1fb171;
+
+      &:hover {
+        background-color: #f6fdf8;
+      }
+    }
+  }
 }

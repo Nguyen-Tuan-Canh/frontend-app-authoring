@@ -1,33 +1,41 @@
 .video-thumbnail {
   position: relative;
-  width: 90%;
-  max-width: 400px;
-  margin: auto;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  margin: 0;
   overflow: hidden;
+  background: linear-gradient(135deg, var(--files-bg-light) 0%, var(--files-bg-light) 100%);
+  border-radius: 6px;
+  border: 1px solid var(--files-border);
 }
 
 .video-thumbnail .thumbnail-overlay {
-  background: rgba(0 0 0 / .7);
+  background: linear-gradient(180deg, rgba(var(--files-primary-rgb), 0.06), rgba(255,255,255,0));
   position: absolute;
-  height: 99%;
+  height: 100%;
   width: 100%;
   inset: 0;
   opacity: 0;
-  -webkit-transition: all .4s ease-in-out 0s;
-  -moz-transition: all .4s ease-in-out 0s;
-  transition: all .4s ease-in-out 0s;
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  -moz-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
 }
 
 .status-badge {
   position: absolute;
   text-align: center;
-  padding-left: 1em;
-  padding-right: 1em;
+  padding: 8px 16px;
   top: 50%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
   -moz-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
+  background-color: rgba(255, 255, 255, 0.95);
+  border-radius: 6px;
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--accent);
+  box-shadow: 0 8px 24px rgba(var(--files-primary-rgb), 0.12);
 }
 
 .video-thumbnail:hover .thumbnail-overlay {
@@ -37,22 +45,27 @@
 .add-thumbnail {
   position: absolute;
   text-align: center;
-  padding-left: 1em;
-  padding-right: 1em;
-  width: 100%;
+  padding: 12px 24px;
+  width: auto;
   top: 50%;
   left: 50%;
   opacity: 0;
   -webkit-transform: translate(-50%, -50%);
   -moz-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
-  -webkit-transition: all .3s ease-in-out 0s;
-  -moz-transition: all .3s ease-in-out 0s;
-  transition: all .3s ease-in-out 0s;
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  -moz-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+  background-color: var(--accent);
+  border: none;
+  color: #ffffff;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
 }
 
 .video-thumbnail:hover .add-thumbnail {
-  top: 50%;
-  left: 50%;
   opacity: 1;
+  background-color: var(--accent-dark);
 }
