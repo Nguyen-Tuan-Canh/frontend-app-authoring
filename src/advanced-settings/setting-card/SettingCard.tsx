@@ -82,7 +82,7 @@ const SettingCard = ({
                 >
                   <div
                     className="p-2 x-small rounded modal-popup-content"
-                    // eslint-disable-next-line react/no-danger
+
                     dangerouslySetInnerHTML={{ __html: help }}
                   />
                 </ModalPopup>
