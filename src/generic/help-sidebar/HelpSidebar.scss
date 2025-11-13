@@ -1,4 +1,4 @@
-
+/* ==================== CUSC – HELP SIDEBAR ==================== */
 .help-sidebar {
   position: relative;
   top: auto;
@@ -189,6 +189,7 @@
   }
 }
 
+/* ==================== ADVANCED SETTINGS CARDS ==================== */
 .advanced-settings .setting-items {
   overflow-x: hidden;
 }
@@ -287,6 +288,7 @@
   }
 }
 
+/* ==================== RESPONSIVE HELP SIDEBAR / CARDS ==================== */
 @media (min-width:768px) {
   .help-sidebar {
     border-radius: 14px;
@@ -356,6 +358,7 @@
   }
 }
 
+/* ==================== DARK THEME FOR HELP SIDEBAR ==================== */
 .theme-dark .help-sidebar {
   background: var(--card, #0f172a);
   border-color: var(--line, #1f2a44);
@@ -410,6 +413,7 @@
   }
 }
 
+/* ==================== REDUCED MOTION ==================== */
 @media (prefers-reduced-motion: reduce) {
   .help-sidebar::after {
     animation: none;
@@ -422,6 +426,7 @@
   }
 }
 
+/* Border animation */
 @keyframes help-border-flow {
   0% {
     background-position: 0% 50%;
@@ -436,7 +441,7 @@
   }
 }
 
-
+/* ==================== TYPOGRAPHY & CONTAINER TOKENS ==================== */
 :root {
   --cusc-font-min: 14px;
   --cusc-font-max: 16px;
@@ -528,6 +533,7 @@ body {
   }
 }
 
+/* ==================== TWO-COLUMN LAYOUT ==================== */
 .layout-two {
   display: grid;
   gap: 16px;
@@ -540,6 +546,7 @@ body {
   }
 }
 
+/* ==================== STICKY HEADER – SCOPED TO CUSC PAGE ==================== */
 :root {
   --header-h: 72px;
 }
@@ -550,16 +557,18 @@ body {
   }
 }
 
-.has-sticky-header {
+/* Chỉ áp dụng padding-top và sticky cho layout bên trong .cusc-page */
+.cusc-page.has-sticky-header {
   padding-top: var(--header-h);
 }
 
-.header-sticky {
+.cusc-page .header-sticky {
   position: sticky;
   top: 0;
   z-index: 1030;
 }
 
+/* ==================== UTILITIES ==================== */
 img,
 svg,
 video,
@@ -631,11 +640,13 @@ canvas {
   }
 }
 
+/* Dark theme globals */
 .theme-dark {
   --line: #1f2a44;
   --card: #0f172a;
 }
 
+/* Reduced motion – global */
 @media (prefers-reduced-motion: reduce) {
   * {
     animation-duration: .001ms !important;
@@ -643,4 +654,282 @@ canvas {
     transition-duration: .001ms !important;
     scroll-behavior: auto !important;
   }
+}
+
+/* ==================== CUSC – FILES TABLE (TEAL THEME GIỐNG ẢNH 2) ==================== */
+.files-table {
+  --files-teal: #10B981;         /* xanh ngọc chính */
+  --files-teal-dark: #059669;
+  --files-teal-soft: #ecfdf5;
+  --files-gray-text: #374151;
+  --files-muted: #6b7280;
+  --files-border: #e5e7eb;
+  --files-border-soft: #e2e8f0;
+  --files-bg: #f8fafc;
+  --files-surface: #ffffff;
+
+  font-size: 14px;
+  color: var(--files-gray-text);
+
+  #table-filters-dropdown {
+    visibility: hidden;
+  }
+
+  .pgn__data-table-layout-wrapper {
+    overflow-x: visible;
+  }
+
+  /* ============ CARD CHÍNH ============ */
+  .pgn__data-table-wrapper {
+    background: var(--files-surface);
+    border-radius: 18px;
+    border: 1px solid var(--files-border-soft);
+    box-shadow: 0 18px 40px rgba(15, 23, 42, .04);
+    padding-top: 4px;
+    font-size: var(--pgn-typography-font-size-sm);
+  }
+
+  /* ============ HÀNG TRÊN (SEARCH + 3 NÚT) ============ */
+  .pgn__data-table-status-bar {
+    margin: 8px 12px 10px;
+    padding: 10px 18px;
+    background: linear-gradient(
+      135deg,
+      rgba(16, 185, 129, .10),
+      #f4fbff
+    );
+    border-radius: 18px;
+    border: 1px solid var(--files-border-soft);
+    box-shadow: 0 10px 26px rgba(15, 23, 42, .06);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+    flex-wrap: nowrap;
+  }
+
+  /* search trắng – giống mẫu */
+  .pgn__data-table-status-bar .form-control,
+  .pgn__data-table-status-bar .pgn__form-control {
+    max-width: 260px;
+    border-radius: 999px;
+    border: 1px solid rgba(148, 163, 184, .55);
+    background-color: #ffffff;
+    box-shadow: 0 4px 10px rgba(15, 23, 42, .05);
+    font-size: 14px;
+    color: var(--files-gray-text);
+
+    &::placeholder {
+      color: var(--files-muted);
+    }
+
+    &:focus {
+      border-color: var(--files-teal);
+      box-shadow:
+        0 0 0 1px rgba(16, 185, 129, .18),
+        0 6px 16px rgba(15, 23, 42, .09);
+    }
+  }
+
+  /* cụm 3 nút bên phải */
+  .pgn__data-table-actions-left {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  /* Sort & Actions – trắng, viền mỏng */
+  .pgn__data-table-actions-left .pgn__btn,
+  .pgn__data-table-actions-left .btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 36px;
+    min-width: 120px;
+    padding: 0 18px;
+    border-radius: 999px;
+    font-size: 13px;
+    font-weight: 600;
+    white-space: nowrap;
+    border: 1px solid var(--files-border-soft);
+    background: #ffffff !important;
+    color: var(--files-gray-text) !important;
+    box-shadow: 0 4px 10px rgba(15, 23, 42, .04);
+
+    &:hover,
+    &:focus-visible {
+      background: #f3f4f6 !important;
+      border-color: #d1d5db;
+    }
+  }
+
+  /* Add files – xanh ngọc (ghi đè luôn btn-primary) */
+  .pgn__data-table-actions-left .pgn__btn:nth-child(3),
+  .pgn__data-table-actions-left .btn:nth-child(3),
+  .pgn__data-table-actions-left .pgn__btn.btn-primary,
+  .pgn__data-table-actions-left .btn.btn-primary {
+    border-color: var(--files-teal) !important;
+    background: linear-gradient(135deg, var(--files-teal), var(--files-teal-dark)) !important;
+    color: #ffffff !important;
+    box-shadow: 0 7px 18px rgba(16, 185, 129, .45) !important;
+
+    &:hover,
+    &:focus-visible {
+      background: linear-gradient(135deg, var(--files-teal-dark), var(--files-teal)) !important;
+    }
+  }
+
+  /* ============ HÀNG DƯỚI “SHOWING … FILES” + VIEW TOGGLE ============ */
+  .pgn__data-table-container > .pgn__data-table-status-bar {
+    margin: 10px 16px;
+    padding: 10px 14px;
+    border-radius: 14px;
+    border: 1px solid var(--files-border);
+    background: var(--files-teal-soft);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+  }
+
+  .pgn__data-table-container > .pgn__data-table-status-bar
+  .pgn__data-table-status-message {
+    font-size: 13px;
+    color: var(--files-muted);
+
+    strong {
+      color: var(--files-teal-dark);
+    }
+  }
+
+  /* nút grid/list – tròn trắng, viền bóng, icon teal */
+  .pgn__data-table-container > .pgn__data-table-status-bar
+  .pgn__btn-icon,
+  .pgn__data-table-container > .pgn__data-table-status-bar
+  .btn-icon,
+  .pgn__data-table-container > .pgn__data-table-status-bar
+  button[aria-label*="grid"],
+  .pgn__data-table-container > .pgn__data-table-status-bar
+  button[aria-label*="list"] {
+    width: 34px;
+    height: 34px;
+    padding: 0;
+    margin-left: 6px;
+    border-radius: 999px;
+    border: none;
+    background: #ffffff;
+    color: var(--files-teal-dark);
+    box-shadow: 0 1px 4px rgba(15, 23, 42, .16);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    &:hover {
+      background: #dcfce7;
+    }
+
+    &[aria-pressed="true"],
+    &.is-active {
+      background: var(--files-teal-dark);
+      color: #ffffff;
+    }
+  }
+
+  /* HEADER CỘT */
+  table thead th,
+  table thead th span {
+    font-weight: 600;
+    color: var(--files-gray-text);
+  }
+
+  /* ============ MOBILE: GIỮ SEARCH & NÚT GỌN GÀNG ============ */
+  @media (max-width: 767.98px) {
+    .pgn__data-table-status-bar {
+      flex-direction: column;
+      align-items: stretch;
+      gap: 8px;
+      padding: 10px 12px;
+    }
+
+    .pgn__data-table-status-bar .form-control,
+    .pgn__data-table-status-bar .pgn__form-control {
+      max-width: 100%;
+      width: 100%;
+      margin-bottom: 2px;
+    }
+
+    .pgn__data-table-actions-left {
+      margin-left: 0;
+      width: 100%;
+      justify-content: flex-start;
+      flex-wrap: wrap;
+      gap: 6px;
+    }
+
+    .pgn__data-table-actions-left .pgn__btn,
+    .pgn__data-table-actions-left .btn {
+      flex: 1 1 calc(33.333% - 6px);
+      min-width: 0;
+      padding-inline: 10px;
+      text-align: center;
+    }
+
+    .pgn__data-table-container > .pgn__data-table-status-bar {
+      flex-wrap: wrap;
+      align-items: flex-start;
+      gap: 6px 10px;
+    }
+  }
+}
+/* ==== CUSC – Override màu nút Files sang xanh ngọc ==== */
+
+/* Palette dùng lại cho nút */
+.files-table {
+  --files-teal: #10B981;
+  --files-teal-dark: #059669;
+}
+
+/* Base style cho TẤT CẢ nút trên thanh status bar */
+.files-table .pgn__data-table-status-bar .btn,
+.files-table .pgn__data-table-status-bar .pgn__btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 36px;
+  min-width: 120px;
+  padding: 0 18px;
+  border-radius: 999px;
+  font-size: 13px;
+  font-weight: 600;
+  white-space: nowrap;
+  border: 1px solid #e2e8f0;
+  background-color: #ffffff !important;
+  color: #374151 !important;
+  box-shadow: 0 4px 10px rgba(15, 23, 42, .04);
+}
+
+/* Sort and filter + Actions: trắng viền mỏng, KHÔNG xanh lam */
+.files-table .pgn__data-table-status-bar .btn-outline-primary,
+.files-table .pgn__data-table-status-bar .pgn__btn.btn-outline-primary {
+  border-color: #e2e8f0 !important;
+  background-color: #ffffff !important;
+  color: #374151 !important;
+}
+
+/* Add files (btn-primary) – xanh ngọc giống ảnh mẫu */
+.files-table .pgn__data-table-status-bar .btn-primary,
+.files-table .pgn__data-table-status-bar .pgn__btn.btn-primary {
+  border-color: var(--files-teal) !important;
+  background: linear-gradient(135deg, var(--files-teal), var(--files-teal-dark)) !important;
+  color: #ffffff !important;
+  box-shadow: 0 7px 18px rgba(16, 185, 129, .45) !important;
+}
+
+/* Hover Add files – đậm hơn một chút */
+.files-table .pgn__data-table-status-bar .btn-primary:hover,
+.files-table .pgn__data-table-status-bar .pgn__btn.btn-primary:hover,
+.files-table .pgn__data-table-status-bar .btn-primary:focus-visible,
+.files-table .pgn__data-table-status-bar .pgn__btn.btn-primary:focus-visible {
+  background: linear-gradient(135deg, var(--files-teal-dark), var(--files-teal)) !important;
 }

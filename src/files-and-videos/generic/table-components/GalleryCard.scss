@@ -1,82 +1,145 @@
+/* ===== CUSC — Gallery Card (Royal Indigo x Cyan, giữ nguyên selectors/methods) ===== */
+/* Palette mới (sắc “chuyên nghiệp” hơn) */
+:root{
+  --files-primary: #6366F1;                 /* indigo-500 */
+  --files-primary-rgb: 99,102,241;
+  --files-accent: #22D3EE;                  /* cyan-400 */
+  --files-accent-rgb: 34,211,238;
+  --files-bg-light: #F5F7FF;                /* nền rất nhạt cho thumb/chip */
+  --files-ink: #0f172a;
+  --files-muted: #64748b;
+  --files-line: #e7ecf6;
+}
+
+/* GIỮ nguyên structure & class; thay layout + màu + hiệu ứng */
 .gallery-card {
   display: flex;
   flex-direction: column;
-  gap: 1px;
+  gap: 12px; /* thoáng hơn */
+
+  /* ===== Thumbnail ===== */
   .thumbnail-container {
     aspect-ratio: 16 / 9;
-  background: linear-gradient(135deg, rgba(var(--files-primary-rgb), 0.06) 0%, var(--files-bg-light) 100%);
-  border-radius: 10px;
-  overflow: hidden;
-  border: 1px solid rgba(var(--files-primary-rgb), 0.12);
-  box-shadow: 0 6px 18px rgba(var(--files-primary-rgb), 0.04);
+    position: relative;
+    background:
+      linear-gradient(135deg,
+        rgba(var(--files-accent-rgb), .10) 0%,
+        var(--files-bg-light) 55%,
+        #ffffff 100%);
+    border-radius: 16px;
+    overflow: hidden; /* giữ nguyên */
+    border: 1px solid rgba(var(--files-primary-rgb), .18);
+    box-shadow:
+      inset 0 1px 0 #fff,
+      0 12px 28px rgba(2,6,23,.10);
+
+    /* vệt sáng góc trên + pattern mịn cho cảm giác premium */
+    &::before{
+      content:"";
+      position:absolute; inset:0;
+      background:
+        radial-gradient(120% 70% at 0% 0%, rgba(255,255,255,.55), transparent 55%);
+      pointer-events:none;
+    }
+    &::after{
+      content:"";
+      position:absolute; inset:0;
+      background:
+        repeating-linear-gradient(135deg,
+          rgba(var(--files-primary-rgb), .03) 0 6px,
+          transparent 6px 12px);
+      mix-blend-mode: soft-light;
+      pointer-events:none;
+    }
 
     .thumbnail-image {
       width: 100%;
       height: 100%;
-      object-fit: cover;
+      object-fit: cover; /* giữ nguyên */
+      transform: translateZ(0);
     }
   }
 
+  /* ===== Card ===== */
   &.pgn__card {
-    background: linear-gradient(90deg, #17C9A6, #0EA5A4);;
-    border: 1px solid rgba(var(--files-primary-rgb), 0.06);
-    border-radius: 12px;
-    box-shadow: 0 6px 18px rgba(2,6,23,0.06);
-    transition: transform .22s ease, box-shadow .28s ease, border-color .2s ease, box-shadow .2s ease;
+    background: #ffffff;
+    border: 1px solid rgba(var(--files-primary-rgb), .16);
+    border-radius: 18px;
+    box-shadow: 0 12px 30px rgba(2,6,23,.12);
+    transition: transform .22s ease, box-shadow .28s ease, border-color .2s ease, filter .18s ease;
     padding: 0;
-    overflow: hidden;
+    overflow: hidden;     /* giữ nguyên */
     will-change: transform;
 
     &:hover {
       transform: translateY(-6px);
-      box-shadow: 0 22px 48px rgba(var(--files-primary-rgb), 0.10);
-      border-color: var(--accent-dark);
+      box-shadow:
+        0 26px 56px rgba(2,6,23,.18),
+        0 0 0 3px rgba(var(--files-primary-rgb), .14);
+      border-color: rgba(var(--files-primary-rgb), .32);
+      filter: saturate(1.03);
     }
 
     .pgn__card-header {
-         background: linear-gradient(90deg, #17C9A6, #0EA5A4);;
-      border-bottom: none;
-      padding: 12px 0 8px 0;
+      background: #fff;
+      border-bottom: 1px solid var(--files-line);
+      padding: 14px 14px 10px 14px;
 
-      .pgn__card-header-actions {
-        margin-top: 0;
-      }
+      .pgn__card-header-actions { margin-top: 0; } /* giữ nguyên method */
     }
 
     .pgn__card-body {
-      padding: 0 14px 16px 14px;
+      padding: 12px 16px 16px 16px;
       display: flex;
       flex-direction: column;
-      gap: 10px;
-      background: linear-gradient(180deg, rgba(var(--files-primary-rgb),0.02), transparent);
+      gap: 12px; /* layout rộng rãi hơn */
+      background: linear-gradient(180deg,
+        rgba(var(--files-primary-rgb), .04),
+        transparent 70%);
     }
   }
 
+  /* ===== Title & Subtitle ===== */
   .picture-title {
-    font-size: 13px;
-    font-weight: 600;
-    color: #212529;
+    font-size: 14px;
+    font-weight: 800;
+    color: var(--files-ink);
+    letter-spacing: .1px;
     margin: 0;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;               /* 2 dòng, chuyên nghiệp hơn */
+    -webkit-box-orient: vertical;
     overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
   }
 
   .picture-subtitle {
-    font-size: 11px;
-    font-weight: 700;
-    color: rgba(var(--files-primary-rgb), .95);
-    background-color: rgba(var(--files-primary-rgb), 0.08);
+    font-size: 12px;
+    font-weight: 800;
+    /* viền gradient tinh tế (không quá “phô”) */
+    background:
+      linear-gradient(#fff,#fff) padding-box,
+      linear-gradient(120deg, rgba(var(--files-accent-rgb),1), rgba(var(--files-primary-rgb),1)) border-box;
+    border: 1px solid transparent;
+    color: #0b3d91;
     border-radius: 999px;
-    padding: 6px 10px;
+    padding: 6px 12px;
     display: inline-block;
-    margin: 8px 0 0 0;
-    box-shadow: 0 6px 18px rgba(var(--files-primary-rgb), 0.04);
-    transition: transform .14s ease, box-shadow .18s ease;
+    margin: 4px 0 0 0;
+    box-shadow: 0 8px 20px rgba(2,6,23,.10);
+    transition: transform .14s ease, box-shadow .18s ease, background .2s ease, letter-spacing .18s ease;
   }
-  .picture-subtitle:hover { transform: translateY(-2px); box-shadow: 0 22px 48px rgba(var(--files-primary-rgb), 0.08); }
+  .picture-subtitle:hover {
+    transform: translateY(-2px);
+    letter-spacing: .2px;
+    box-shadow: 0 22px 48px rgba(2,6,23,.18), 0 0 0 5px rgba(var(--files-primary-rgb), .12);
+  }
 
-  /* thumbnail hover accent */
-  .thumbnail-container:hover { box-shadow: 0 18px 40px rgba(var(--files-primary-rgb), 0.06); transform: translateY(-4px); transition: transform .18s ease, box-shadow .22s ease; }
+  /* ===== Hover effect cho thumbnail ===== */
+  .thumbnail-container:hover {
+    box-shadow:
+      0 0 0 4px rgba(var(--files-primary-rgb), .14),
+      0 20px 42px rgba(2,6,23,.14);
+    transform: translateY(-3px);
+    transition: transform .18s ease, box-shadow .22s ease;
+  }
 }
-
