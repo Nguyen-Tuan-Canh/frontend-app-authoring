@@ -933,3 +933,91 @@ canvas {
 .files-table .pgn__data-table-status-bar .pgn__btn.btn-primary:focus-visible {
   background: linear-gradient(135deg, var(--files-teal-dark), var(--files-teal)) !important;
 }
+
+/* ====== CUSC – Sub header: subtitle trên, title dưới, actions bên phải ====== */
+
+/* Wrapper cả header */
+.sub-header {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 16px;
+  flex-wrap: wrap;           /* mobile rớt dòng an toàn */
+  border-bottom: 1px solid var(--line, #e6edf4);
+  padding-bottom: 8px;
+}
+
+/* Title block (đang là h2) */
+h2.sub-header-title {
+  /* ghi đè inline style đang có */
+  padding: 0 !important;
+  margin: 0;
+  text-align: left !important;
+
+  /* xếp subtitle & text thành 2 dòng */
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 4px;
+
+  /* style title (phần text của h2) */
+  font-size: clamp(20px, 3vw, 32px);
+  line-height: 1.15;
+  font-weight: 800;
+  color: #0f172a;
+  letter-spacing: .2px;
+
+  /* subtitle */
+  > .sub-header-title-subtitle {
+    order: -1;                 /* đảm bảo nằm trên dù code order thay đổi */
+    display: block;
+    font-size: clamp(13px, 2vw, 16px);
+    line-height: 1.35;
+    font-weight: 700;
+    color: #5b6b83;            /* muted */
+    letter-spacing: .2px;
+    margin: 0;
+  }
+}
+
+/* Cụm nút bên phải */
+.sub-header-actions {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+
+  /* giữ nút gọn & đồng bộ */
+  .btn, .pgn__btn {
+    height: 40px;
+    border-radius: 999px;
+    padding: 0 14px;
+    font-weight: 700;
+  }
+}
+
+/* Đoạn mô tả dưới header (nếu có) */
+.sub-header-instructions {
+  margin: 10px 0 0;
+  color: #4b5563;
+  font-size: 15px;
+  line-height: 1.55;
+}
+
+/* Mobile: actions rớt xuống dưới, full width */
+@media (max-width: 767.98px) {
+  .sub-header {
+    align-items: flex-start;
+    gap: 10px 12px;
+  }
+  .sub-header-actions {
+    width: 100%;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    gap: 8px;
+
+    .btn, .pgn__btn {
+      height: 38px;
+      padding: 0 12px;
+    }
+  }
+}
