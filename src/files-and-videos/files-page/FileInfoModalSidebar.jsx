@@ -4,13 +4,12 @@ import PropTypes from 'prop-types';
 import { FormattedMessage, FormattedDate, useIntl } from '@edx/frontend-platform/i18n';
 import {
   Stack,
-  IconButton,
   ActionRow,
   Icon,
   IconButtonWithTooltip,
   CheckboxControl,
 } from '@openedx/paragon';
-import { ContentCopy, InfoOutline } from '@openedx/paragon/icons';
+import { InfoOutline } from '@openedx/paragon/icons';
 
 import { getFileSizeToClosestByte } from '../../utils';
 import messages from './messages';
@@ -22,12 +21,15 @@ const FileInfoModalSidebar = ({
 }) => {
   const intl = useIntl();
   const [lockedState, setLockedState] = useState(asset?.locked);
+
   const handleLock = (e) => {
     const locked = e.target.checked;
     setLockedState(locked);
     handleLockedAsset(asset?.id, locked);
   };
+
   const fileSize = getFileSizeToClosestByte(asset?.fileSize);
+
   return (
     <Stack>
       <div className="font-weight-bold">
@@ -41,44 +43,46 @@ const FileInfoModalSidebar = ({
         hour="numeric"
         minute="numeric"
       />
+
       <div className="font-weight-bold mt-3">
         <FormattedMessage {...messages.fileSizeTitle} />
       </div>
       {fileSize}
+
+      {/* URL Studio */}
       <div className="font-weight-bold border-top mt-3 pt-3">
         <FormattedMessage {...messages.studioUrlTitle} />
       </div>
       <ActionRow>
-        <div
-          className="files-page-url-truncate"
+        <a
+          className="files-page-url-truncate files-page-url-link"
           style={{ wordBreak: 'break-word' }}
+          href={asset?.portableUrl}
+          target="_blank"
+          rel="noopener noreferrer"
         >
           {asset?.portableUrl}
-        </div>
-        <ActionRow.Spacer />
-        <IconButton
-          src={ContentCopy}
-          iconAs={Icon}
-          alt={messages.copyStudioUrlTitle.defaultMessage}
-          onClick={() => navigator.clipboard.writeText(asset?.portableUrl)}
-        />
+        </a>
       </ActionRow>
+
+      {/* URL web */}
       <div className="font-weight-bold mt-3">
         <FormattedMessage {...messages.webUrlTitle} />
       </div>
       <ActionRow>
-        <div className="files-page-url-truncate" style={{ wordBreak: 'break-word' }}>
+        <a
+          className="files-page-url-truncate files-page-url-link"
+          style={{ wordBreak: 'break-word' }}
+          href={asset?.externalUrl}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           {asset?.externalUrl}
-        </div>
-        <ActionRow.Spacer />
-        <IconButton
-          src={ContentCopy}
-          iconAs={Icon}
-          alt={messages.copyWebUrlTitle.defaultMessage}
-          onClick={() => navigator.clipboard.writeText(asset?.externalUrl)}
-        />
+        </a>
       </ActionRow>
-      <ActionRow className=" border-top mt-3 pt-3">
+
+      {/* Khóa tệp */}
+      <ActionRow className="border-top mt-3 pt-3">
         <div className="font-weight-bold">
           <FormattedMessage {...messages.lockFileTitle} />
         </div>
@@ -101,6 +105,7 @@ const FileInfoModalSidebar = ({
     </Stack>
   );
 };
+
 FileInfoModalSidebar.propTypes = {
   asset: PropTypes.shape({
     displayName: PropTypes.string.isRequired,
