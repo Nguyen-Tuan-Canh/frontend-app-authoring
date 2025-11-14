@@ -2,14 +2,14 @@ import { defineMessages } from '@edx/frontend-platform/i18n';
 
 const messages = defineMessages({
   upstreamLinkOk: {
-    defaultMessage: 'This item is linked to a library item.',
+    defaultMessage: 'Mục này đang được liên kết với một mục trong thư viện.',
     id: 'upstream-icon.ok',
-    description: 'Hint and aria-label for the upstream icon when the link is valid.',
+    description: 'Gợi ý và nhãn ARIA cho biểu tượng upstream khi liên kết hợp lệ.',
   },
   upstreamLinkError: {
-    defaultMessage: 'The link to the library item is broken.',
+    defaultMessage: 'Liên kết tới mục trong thư viện đã bị lỗi.',
     id: 'upstream-icon.error',
-    description: 'Hint and aria-label for the upstream icon when the link is broken.',
+    description: 'Gợi ý và nhãn ARIA cho biểu tượng upstream khi liên kết bị lỗi.',
   },
 });
 

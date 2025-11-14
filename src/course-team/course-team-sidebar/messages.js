@@ -3,39 +3,39 @@ import { defineMessages } from '@edx/frontend-platform/i18n';
 const messages = defineMessages({
   sidebarTitle: {
     id: 'course-authoring.course-team.sidebar.title',
-    defaultMessage: 'Course team roles',
+    defaultMessage: 'Vai trò trong đội ngũ khóa học',
   },
   sidebarAbout_1: {
     id: 'course-authoring.course-team.sidebar.about-1',
-    defaultMessage: 'Course team members with the Staff role are course co-authors. They have full writing and editing privileges on all course content.',
+    defaultMessage: 'Thành viên đội ngũ khóa học với vai trò Nhân sự (Staff) là đồng tác giả của khóa học. Họ có toàn quyền soạn thảo và chỉnh sửa mọi nội dung khóa học.',
   },
   sidebarAbout_2: {
     id: 'course-authoring.course-team.sidebar.about-2',
-    defaultMessage: 'Admins are course team members who can add and remove other course team members.',
+    defaultMessage: 'Quản trị viên (Admin) là các thành viên có thể thêm hoặc xóa những thành viên khác khỏi đội ngũ khóa học.',
   },
   sidebarAbout_3: {
     id: 'course-authoring.course-team.sidebar.about-3',
-    defaultMessage: 'All course team members can access content in Studio, the LMS, and Insights, but are not automatically enrolled in the course.',
+    defaultMessage: 'Tất cả thành viên đội ngũ khóa học đều có thể truy cập nội dung trong Studio, LMS và Insights nhưng không tự động được ghi danh vào khóa học.',
   },
   ownershipTitle: {
     id: 'course-authoring.course-team.sidebar.ownership.title',
-    defaultMessage: 'Transferring ownership',
+    defaultMessage: 'Chuyển quyền sở hữu',
   },
   ownershipDescription: {
     id: 'course-authoring.course-team.sidebar.ownership.description',
-    defaultMessage: 'Every course must have an Admin. If you are the Admin and you want to transfer ownership of the course, click {strong} to make another user the Admin, then ask that user to remove you from the Course Team list.',
+    defaultMessage: 'Mỗi khóa học phải có ít nhất một Quản trị viên. Nếu bạn hiện là Quản trị viên và muốn chuyển quyền sở hữu khóa học, hãy nhấp {strong} để đặt một người dùng khác làm Quản trị viên, sau đó nhờ người đó xóa bạn khỏi danh sách Đội ngũ khóa học.',
   },
   helpInfoSidebarTitle: {
     id: 'course-authoring.course-team.sidebar.helpInfoSidebarTitle',
-    defaultMessage: 'Need help across multiple courses?',
+    defaultMessage: 'Cần hỗ trợ cho nhiều khóa học?',
   },
   helpInfoDescription: {
     id: 'course-authoring.course-team.sidebar.helpInfoDescription',
-    defaultMessage: 'Email {email_address} to add, remove, or update user access in bulk.',
+    defaultMessage: 'Hãy gửi email đến {email_address} để thêm, xóa hoặc cập nhật quyền truy cập người dùng hàng loạt.',
   },
   addAdminAccess: {
     id: 'course-authoring.course-team.sidebar.ownership.addAdminAccess',
-    defaultMessage: 'Add admin access',
+    defaultMessage: 'Thêm quyền quản trị',
   },
 });
 

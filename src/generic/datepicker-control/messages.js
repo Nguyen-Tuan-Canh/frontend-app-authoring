@@ -3,7 +3,7 @@ import { defineMessages } from '@edx/frontend-platform/i18n';
 const messages = defineMessages({
   calendarAltText: {
     id: 'course-authoring.schedule.schedule-section.alt-text',
-    defaultMessage: 'Calendar for datepicker input',
+    defaultMessage: 'Lịch cho ô chọn ngày',
   },
   datepickerUTC: {
     id: 'course-authoring.schedule.schedule-section.datepicker.utc',

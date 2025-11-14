@@ -7,42 +7,42 @@ const messages = defineMessages({
   },
   headingTitle: {
     id: 'course-authoring.course-checklist.heading.title',
-    defaultMessage: 'Checklists',
-    description: 'Header text for the Checklist page',
+    defaultMessage: 'Danh sách kiểm tra',
+    description: 'Tiêu đề chính cho trang Danh sách kiểm tra',
   },
   headingSubtitle: {
     id: 'course-authoring.course-checklist.heading.subtitle',
-    defaultMessage: 'Tools',
+    defaultMessage: 'Công cụ',
   },
   launchChecklistLabel: {
     id: 'launchChecklistLabel',
-    defaultMessage: 'Launch checklist',
-    description: 'Header text for a checklist that describes actions to have completed before a course should launch',
+    defaultMessage: 'Danh sách kiểm tra trước khi mở khóa học',
+    description: 'Tiêu đề cho danh sách kiểm tra các việc cần hoàn thành trước khi mở khóa học',
   },
   bestPracticesChecklistLabel: {
     id: 'bestPracticesChecklistLabel',
-    defaultMessage: 'Best practices checklist',
-    description: 'Header text for a checklist that describes best practices for a course',
+    defaultMessage: 'Danh sách kiểm tra thực hành tốt nhất',
+    description: 'Tiêu đề cho danh sách kiểm tra các thực hành tốt nhất cho khóa học',
   },
   launchChecklistLoadingLabel: {
     id: 'doneLoadingChecklistStatusLabel',
-    defaultMessage: 'Launch Checklist data is loading',
-    description: 'Label telling the user that the Launch Checklist is loading',
+    defaultMessage: 'Đang tải dữ liệu Danh sách kiểm tra trước khi mở khóa học',
+    description: 'Nhãn thông báo cho người dùng biết dữ liệu Danh sách kiểm tra trước khi mở khóa học đang được tải',
   },
   launchChecklistDoneLoadingLabel: {
     id: 'launchChecklistDoneLoadingLabel',
-    defaultMessage: 'Launch Checklist data is done loading',
-    description: 'Label telling the user that the Launch Checklist is done loading',
+    defaultMessage: 'Dữ liệu Danh sách kiểm tra trước khi mở khóa học đã được tải xong',
+    description: 'Nhãn thông báo cho người dùng biết dữ liệu Danh sách kiểm tra trước khi mở khóa học đã tải xong',
   },
   bestPracticesChecklistLoadingLabel: {
     id: 'bestPracticesChecklistLoadingLabel',
-    defaultMessage: 'Best Practices Checklist data is loading',
-    description: 'Label telling the user that the Best Practices Checklist is loading',
+    defaultMessage: 'Đang tải dữ liệu Danh sách kiểm tra thực hành tốt nhất',
+    description: 'Nhãn thông báo cho người dùng biết dữ liệu Danh sách kiểm tra thực hành tốt nhất đang được tải',
   },
   bestPracticesChecklistDoneLoadingLabel: {
     id: 'bestPracticesChecklistDoneLoadingLabel',
-    defaultMessage: 'Best Practices Checklist data is done loading',
-    description: 'Label telling the user that the Best Practices Checklist is done loading',
+    defaultMessage: 'Dữ liệu Danh sách kiểm tra thực hành tốt nhất đã được tải xong',
+    description: 'Nhãn thông báo cho người dùng biết dữ liệu Danh sách kiểm tra thực hành tốt nhất đã tải xong',
   },
 });
 

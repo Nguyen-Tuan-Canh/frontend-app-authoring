@@ -3,33 +3,33 @@ import { defineMessages } from '@edx/frontend-platform/i18n';
 const messages = defineMessages({
   uploadImageDropzoneText: {
     id: 'course-authoring.certificates.modal-dropzone.text',
-    defaultMessage: 'Drag and drop your image here or click to upload',
-    description: 'Description to drag and drop block',
+    defaultMessage: 'Kéo và thả ảnh của bạn vào đây hoặc nhấp để tải lên',
+    description: 'Mô tả cho khối kéo và thả',
   },
   uploadImageDropzoneAlt: {
     id: 'course-authoring.certificates.modal-dropzone.dropzone-alt',
-    defaultMessage: 'Uploaded image for course certificate',
-    description: 'Description for the uploaded image',
+    defaultMessage: 'Ảnh đã tải lên cho chứng chỉ khóa học',
+    description: 'Mô tả cho ảnh đã tải lên',
   },
   uploadImageValidationText: {
     id: 'course-authoring.certificates.modal-dropzone.validation.text',
-    defaultMessage: 'Only {types} files can be uploaded. Please select a file ending in {extensions} to upload.',
-    description: 'Error message for when an invalid file type is selected',
+    defaultMessage: 'Chỉ có thể tải lên tệp {types}. Vui lòng chọn tệp có phần mở rộng {extensions} để tải lên.',
+    description: 'Thông báo lỗi khi chọn sai loại tệp',
   },
   cancelModal: {
     id: 'course-authoring.certificates.modal-dropzone.cancel.modal',
-    defaultMessage: 'Cancel',
-    description: 'Text for the cancel button in the modal',
+    defaultMessage: 'Hủy',
+    description: 'Văn bản cho nút Hủy trong modal',
   },
   uploadModal: {
     id: 'course-authoring.certificates.modal-dropzone.upload.modal',
-    defaultMessage: 'Upload',
-    description: 'Text for the upload button in the modal',
+    defaultMessage: 'Tải lên',
+    description: 'Văn bản cho nút Tải lên trong modal',
   },
   uploadImageDropzoneInvalidSizeMore: {
     id: 'course-authoring.certificates.modal-dropzone.validation.invalid-size-more',
-    defaultMessage: 'Image size must be less than {maxSize}MB.',
-    description: 'Error message for when the uploaded image size exceeds the limit',
+    defaultMessage: 'Kích thước ảnh phải nhỏ hơn {maxSize}MB.',
+    description: 'Thông báo lỗi khi ảnh tải lên vượt quá giới hạn kích thước',
   },
 });
 

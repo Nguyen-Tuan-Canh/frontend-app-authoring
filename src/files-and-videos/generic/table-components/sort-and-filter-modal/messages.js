@@ -3,81 +3,81 @@ import { defineMessages } from '@edx/frontend-platform/i18n';
 const messages = defineMessages({
   modalTitle: {
     id: 'course-authoring.files-and-videos.sort-and-filter.modal.title',
-    defaultMessage: 'Sort and Filter',
+    defaultMessage: 'Sắp xếp và lọc',
   },
   sortByHeader: {
     id: 'course-authoring.files-and-videos.sort-and-filter.modal.sortBySection.header',
-    defaultMessage: 'Sort by',
+    defaultMessage: 'Sắp xếp theo',
   },
   filterByHeader: {
     id: 'course-authoring.files-and-videos.sort-and-filter.modal.filterBySection.header',
-    defaultMessage: 'Filter by',
+    defaultMessage: 'Lọc theo',
   },
   clearAllButtonLabel: {
     id: 'course-authoring.files-and-videos.sort-and-filter.modal.clearAllButton.label',
-    defaultMessage: 'Clear all',
+    defaultMessage: 'Xóa tất cả',
   },
   cancelButtonLabel: {
     id: 'course-authoring.files-and-videos.sort-and-filter.modal.cancelButton.label',
-    defaultMessage: 'Cancel',
+    defaultMessage: 'Hủy',
   },
   sortByNameAscending: {
     id: 'course-authoring.files-and-videos.sort-and-filter.modal.sortByNameAscendingButton.label',
-    defaultMessage: 'Name (A-Z)',
+    defaultMessage: 'Tên (A–Z)',
   },
   sortByNameAscendingAriaLabel: {
     id: 'course-authoring.files-and-videos.sort-and-filter.modal.sortByNameAscendingButton.aria-label',
-    defaultMessage: 'name descending radio',
+    defaultMessage: 'nút chọn radio tên giảm dần',
     description: 'Accessible (screen reader) label for "name descending" filter',
   },
   sortByNewest: {
     id: 'course-authoring.files-and-videos.sort-and-filter.modal.sortByNewestButton.label',
-    defaultMessage: 'Newest',
+    defaultMessage: 'Mới nhất',
   },
   sortByNewestAriaLabel: {
     id: 'course-authoring.files-and-videos.sort-and-filter.modal.sortByNewestButton.label-label',
-    defaultMessage: 'date added descending radio',
+    defaultMessage: 'nút chọn radio ngày thêm giảm dần',
     description: 'Accessible (screen reader) label for "date added descending" filter',
   },
   sortBySizeDescending: {
     id: 'course-authoring.files-and-videos.sort-and-filter.modal.sortBySizeDescendingButton.label',
-    defaultMessage: 'File size (High to low)',
+    defaultMessage: 'Kích thước tệp (lớn đến nhỏ)',
   },
   sortBySizeDescendingAriaLabel: {
     id: 'course-authoring.files-and-videos.sort-and-filter.modal.sortBySizeDescendingButton.aria-label',
-    defaultMessage: 'file size descending radio',
+    defaultMessage: 'nút chọn radio kích thước tệp giảm dần',
     description: 'Accessible (screen reader) label for "file size descending" filter',
   },
   sortByNameDescending: {
     id: 'course-authoring.files-and-videos.sort-and-filter.modal.sortByNameDescendingButton.label',
-    defaultMessage: 'Name (Z-A)',
+    defaultMessage: 'Tên (Z–A)',
   },
   sortByNameDescendingAriaLabel: {
     id: 'course-authoring.files-and-videos.sort-and-filter.modal.sortByNameDescendingButton.aria-label',
-    defaultMessage: 'name ascending radio',
+    defaultMessage: 'nút chọn radio tên tăng dần',
     description: 'Accessible (screen reader) label for "name ascending" filter',
   },
   sortByOldest: {
     id: 'course-authoring.files-and-videos.sort-and-filter.modal.sortByOldestButton.label',
-    defaultMessage: 'Oldest',
+    defaultMessage: 'Cũ nhất',
   },
   sortByOldestAriaLabel: {
     id: 'course-authoring.files-and-videos.sort-and-filter.modal.sortByOldestButton.aria-label',
-    defaultMessage: 'date added ascending radio',
+    defaultMessage: 'nút chọn radio ngày thêm tăng dần',
     description: 'Accessible (screen reader) label for "date added ascending" filter',
   },
   sortBySizeAscending: {
     id: 'course-authoring.files-and-videos.sort-and-filter.modal.sortBySizeAscendingButton.label',
-    defaultMessage: 'File size (Low to high)',
+    defaultMessage: 'Kích thước tệp (nhỏ đến lớn)',
   },
   sortBySizeAscendingAriaLabel: {
     id: 'course-authoring.files-and-videos.sort-and-filter.modal.sortBySizeAscendingButton.aria-label',
-    defaultMessage: 'file size ascending radio',
+    defaultMessage: 'nút chọn radio kích thước tệp tăng dần',
     description: 'Accessible (screen reader) label for "file size ascending" filter',
   },
   applySortButton: {
     id: 'course-authoring.files-and-videos.sort-and-filter.modal.applyySortButton.label',
-    defaultMessage: 'Apply',
+    defaultMessage: 'Áp dụng',
   },
 });
 

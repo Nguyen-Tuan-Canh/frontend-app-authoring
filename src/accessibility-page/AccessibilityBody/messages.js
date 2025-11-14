@@ -3,108 +3,107 @@ import { defineMessages } from '@edx/frontend-platform/i18n';
 const messages = defineMessages({
   a11yBodyPolicyLink: {
     id: 'a11yBodyPolicyLink',
-    defaultMessage: 'Website Accessibility Policy',
-    description: 'Title for link to full accessibility policy.',
+    defaultMessage: 'Chính sách khả năng truy cập của website',
+    description: 'Tiêu đề cho liên kết đến toàn văn chính sách về khả năng truy cập.',
   },
   a11yBodyPageHeader: {
     id: 'a11yBodyPageHeader',
-    defaultMessage: 'Individualized Accessibility Process for Course Creators',
-    description: 'Heading for studio\'s accessibility policy page.',
+    defaultMessage: 'Quy trình hỗ trợ khả năng truy cập dành cho người tạo khóa học',
+    description: 'Tiêu đề cho trang chính sách khả năng truy cập của Studio.',
   },
   a11yBodyIntroGraph: {
     id: 'a11yBodyIntroGraph',
-    defaultMessage: `At edX, we seek to understand and respect the unique needs and perspectives of the edX global community.
-      We value every course team and are committed to expanding access to all, including course team creators and authors with
-      disabilities. To that end, we have adopted a {communityAccessibilityLink} and this process to allow course team creators
-      and authors to request assistance if they are unable to develop and post content on our platform via Studio because of their
-      disabilities.`,
-    description: 'Introductory paragraph outlining why we care about accessibility, and what we\'re doing about it.',
+    defaultMessage: `Tại edX, chúng tôi luôn nỗ lực thấu hiểu và tôn trọng những nhu cầu và góc nhìn đa dạng của cộng đồng toàn cầu edX.
+      Chúng tôi trân trọng mọi đội ngũ khóa học và cam kết mở rộng khả năng tiếp cận cho tất cả mọi người, bao gồm cả những người tạo
+      khóa học và tác giả nội dung có khuyết tật. Vì vậy, chúng tôi đã ban hành {communityAccessibilityLink} cùng với quy trình này để
+      cho phép người tạo khóa học và tác giả yêu cầu hỗ trợ nếu họ không thể phát triển và đăng nội dung lên nền tảng của chúng tôi
+      thông qua Studio do hạn chế về khuyết tật của họ.`,
+    description: 'Đoạn giới thiệu nêu lý do chúng tôi coi trọng khả năng truy cập và những gì đang thực hiện.',
   },
   a11yBodyStepsHeader: {
     id: 'a11yBodyStepsHeader',
-    defaultMessage: 'Course team creators and authors needing such assistance should take the following steps:',
-    description: 'Heading for list of steps authors can take for accessibility requests.',
+    defaultMessage: 'Người tạo khóa học và tác giả cần hỗ trợ có thể thực hiện các bước sau:',
+    description: 'Tiêu đề cho danh sách các bước mà tác giả có thể thực hiện để yêu cầu hỗ trợ về khả năng truy cập.',
   },
   a11yBodyEdxResponse: {
     id: 'a11yBodyEdxResponse',
-    defaultMessage: `'We will communicate with you about your preferences and needs in determining the appropriate solution, although
-      the ultimate decision will be ours, provided that the solution is effective and timely. The factors we will consider in choosing
-      an accessibility solution are: effectiveness; timeliness (relative to your deadlines); ease of implementation; and ease of use for
-      you. We will notify you of the decision and explain the basis for our decision within 10 business days of discussing with you.`,
-    description: 'Paragraph outlining how we will select an accessibility solution.',
+    defaultMessage: `Chúng tôi sẽ trao đổi với bạn về nhu cầu và mong muốn của bạn để xác định giải pháp phù hợp. Tuy nhiên, quyết định cuối cùng
+      sẽ do chúng tôi đưa ra, miễn là giải pháp đó hiệu quả và được triển khai đúng thời gian. Các yếu tố chúng tôi cân nhắc khi lựa chọn
+      một giải pháp về khả năng truy cập bao gồm: mức độ hiệu quả; tính kịp thời (so với các mốc thời gian của bạn); mức độ dễ triển khai; và
+      mức độ thuận tiện cho bạn khi sử dụng. Chúng tôi sẽ thông báo quyết định và giải thích lý do trong vòng 10 ngày làm việc kể từ khi trao đổi với bạn.`,
+    description: 'Đoạn văn mô tả cách chúng tôi lựa chọn giải pháp hỗ trợ khả năng truy cập.',
   },
   a11yBodyEdxFollowUp: {
     id: 'a11yBodyEdxFollowUp',
-    defaultMessage: `Thereafter, we will communicate with you on a weekly basis regarding our evaluation, decision, and progress in
-      implementing the accessibility solution. We will notify you when implementation of your accessibility solution is complete and
-      will follow-up with you as may be necessary to see if the solution was effective.`,
-    description: 'Paragraph outlining how we will follow-up with you during and after implementing an accessibility solution.',
+    defaultMessage: `Sau đó, chúng tôi sẽ trao đổi với bạn hằng tuần về quá trình đánh giá, quyết định và tiến độ triển khai giải pháp khả năng truy cập.
+      Chúng tôi sẽ thông báo khi việc triển khai giải pháp hoàn tất và tiếp tục liên hệ với bạn khi cần để đảm bảo giải pháp thực sự hiệu quả.`,
+    description: 'Đoạn văn mô tả cách chúng tôi theo sát tình trạng hỗ trợ trong và sau khi triển khai giải pháp.',
   },
   a11yBodyOngoingSupport: {
     id: 'a11yBodyOngoingSupport',
-    defaultMessage: 'EdX will provide ongoing technical support as needed and will address any additional issues that arise after the initial course creation.',
-    description: 'A statement of ongoing support.',
+    defaultMessage: 'EdX sẽ cung cấp hỗ trợ kỹ thuật thường xuyên khi cần thiết và xử lý mọi vấn đề phát sinh thêm sau giai đoạn tạo khóa học ban đầu.',
+    description: 'Câu khẳng định cam kết hỗ trợ lâu dài.',
   },
   a11yBodyA11yFeedback: {
     id: 'a11yBodyA11yFeedback',
-    defaultMessage: 'Please direct any questions or suggestions on how to improve the accessibility of Studio to {emailElement} or use the form below. We welcome your feedback.',
-    description: 'Contact information heading for those with accessibility issues or suggestions.',
+    defaultMessage: 'Nếu bạn có bất kỳ câu hỏi hoặc đề xuất nào về cách cải thiện khả năng truy cập của Studio, hãy liên hệ {emailElement} hoặc sử dụng biểu mẫu bên dưới. Chúng tôi luôn hoan nghênh phản hồi của bạn.',
+    description: 'Thông tin liên hệ cho những người có vấn đề hoặc góp ý về khả năng truy cập.',
   },
   a11yBodyEmailHeading: {
     id: 'a11yBodyEmailHeading',
-    defaultMessage: 'Send an email to {emailElement} with the following information:',
-    description: 'Heading for list of information required when you email us.',
+    defaultMessage: 'Vui lòng gửi email đến {emailElement} với các thông tin sau:',
+    description: 'Tiêu đề cho danh sách thông tin cần có khi gửi email cho chúng tôi.',
   },
   a11yBodyNameEmail: {
     id: 'a11yBodyNameEmail',
-    defaultMessage: 'your name and email address;',
-    description: 'Your contact information.',
+    defaultMessage: 'họ tên và địa chỉ email của bạn;',
+    description: 'Thông tin liên hệ của bạn.',
   },
   a11yBodyInstitution: {
     id: 'a11yBodyInstitution',
-    defaultMessage: 'the edX member institution that you are affiliated with;',
-    description: 'edX affiliate information.',
+    defaultMessage: 'tổ chức/đơn vị thành viên edX mà bạn đang công tác hoặc liên kết;',
+    description: 'Thông tin về đơn vị liên kết với edX.',
   },
   a11yBodyBarrier: {
     id: 'a11yBodyBarrier',
-    defaultMessage: 'a brief description of the challenge or barrier to access that you are experiencing; and',
-    description: 'Accessibility problem information.',
+    defaultMessage: 'một mô tả ngắn gọn về khó khăn hoặc rào cản truy cập mà bạn đang gặp phải; và',
+    description: 'Thông tin về vấn đề khả năng truy cập.',
   },
   a11yBodyTimeConstraints: {
     id: 'a11yBodyTimeConstraints',
-    defaultMessage: 'how soon you need access and for how long (e.g., a planned course start date or in connection with a course-related deadline such as a final essay).',
-    description: 'Time contstraint information.',
+    defaultMessage: 'thời điểm bạn cần có quyền truy cập và khoảng thời gian cần thiết (ví dụ: ngày dự kiến bắt đầu khóa học hoặc một hạn chót liên quan đến khóa học như hạn nộp bài luận cuối kỳ).',
+    description: 'Thông tin về giới hạn thời gian.',
   },
   a11yBodyReceipt: {
     id: 'a11yBodyReceipt',
-    defaultMessage: 'The edX Support Team will respond to confirm receipt and forward your request to the edX Partner Manager for your institution and the edX Website Accessibility Specialist.',
-    description: 'Paragraph outlining what steps edX will take immediately.',
+    defaultMessage: 'Nhóm Hỗ trợ edX sẽ phản hồi để xác nhận đã nhận được yêu cầu của bạn và chuyển tiếp yêu cầu đến Quản lý Đối tác edX phụ trách đơn vị của bạn cùng với Chuyên gia Khả năng Truy cập Website của edX.',
+    description: 'Đoạn văn mô tả những bước edX sẽ thực hiện ngay sau khi nhận được yêu cầu.',
   },
   a11yBodyExtraInfo: {
     id: 'a11yBodyExtraInfo',
-    defaultMessage: `With guidance from the Website Accessibility Specialist, edX will contact you to discuss your request and gather
-      additional information from you about your preferences and needs, to determine if there's a workable solution that edX is able to support.`,
-    description: 'Paragraph outlining how and when edX will reach out to you.',
+    defaultMessage: `Dưới sự tư vấn của Chuyên gia Khả năng Truy cập Website, edX sẽ liên hệ với bạn để trao đổi chi tiết hơn về yêu cầu, thu thập thêm thông tin
+      về nhu cầu và mong đợi của bạn nhằm xác định một giải pháp phù hợp mà edX có thể hỗ trợ.`,
+    description: 'Đoạn văn mô tả cách và thời điểm edX sẽ liên hệ với bạn.',
   },
   a11yBodyFixesListHeader: {
     id: 'a11yBodyFixesListHeader',
-    defaultMessage: 'EdX will assist you promptly and thoroughly so that you are able to create content on the CMS within your time constraints.  Such efforts may include, but are not limited to:',
-    description: 'Heading for list of ways we might be able to assist.',
+    defaultMessage: 'EdX sẽ hỗ trợ bạn kịp thời và đầy đủ để bạn có thể tạo nội dung trên CMS trong khung thời gian của mình. Các hỗ trợ này có thể bao gồm, nhưng không giới hạn ở:',
+    description: 'Tiêu đề cho danh sách các hình thức hỗ trợ mà chúng tôi có thể cung cấp.',
   },
   a11yBodyThirdParty: {
     id: 'a11yBodyThirdParty',
-    defaultMessage: 'Purchasing a third-party tool or software for use on an individual basis to assist your use of Studio;',
-    description: 'Buy third-party software.',
+    defaultMessage: 'Mua sắm công cụ hoặc phần mềm của bên thứ ba để sử dụng riêng, hỗ trợ bạn làm việc với Studio;',
+    description: 'Mua phần mềm hỗ trợ từ bên thứ ba.',
   },
   a11yBodyContractor: {
     id: 'a11yBodyContractor',
-    defaultMessage: 'Engaging a trained independent contractor to provide real-time visual, verbal and physical assistance; or',
-    description: 'Hire a contractor.',
+    defaultMessage: 'Thuê cộng tác viên hoặc chuyên gia đã được đào tạo để hỗ trợ trực tiếp về mặt hình ảnh, lời nói và thao tác; hoặc',
+    description: 'Thuê cộng tác viên hỗ trợ.',
   },
   a11yBodyCodeFix: {
     id: 'a11yBodyCodeFix',
-    defaultMessage: 'Developing new code to implement a technical fix.',
-    description: 'Make a technical fix.',
+    defaultMessage: 'Phát triển mã nguồn mới để triển khai một giải pháp kỹ thuật khắc phục vấn đề.',
+    description: 'Thực hiện sửa lỗi hoặc cải tiến kỹ thuật.',
   },
 });
 

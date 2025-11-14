@@ -4,49 +4,49 @@ const messages = defineMessages({
 
   titleLabel: {
     id: 'authoring.videoeditor.handout.title.label',
-    defaultMessage: 'Handout',
-    description: 'Title for the handout widget',
+    defaultMessage: 'Tài liệu đính kèm',
+    description: 'Tiêu đề cho phần tài liệu đính kèm (handout)',
   },
   uploadButtonLabel: {
     id: 'authoring.videoeditor.handout.upload.label',
-    defaultMessage: 'Upload Handout',
-    description: 'Label for upload button',
+    defaultMessage: 'Tải tài liệu lên',
+    description: 'Nhãn nút để tải tài liệu đính kèm lên',
   },
   addHandoutMessage: {
     id: 'authoring.videoeditor.handout.upload.addHandoutMessage',
-    defaultMessage: `Add a handout to accompany this video. Learners can download
-    this file by clicking "Download Handout" below the video.`,
-    description: 'Message displayed when uploading a handout',
+    defaultMessage: `Thêm tài liệu đính kèm cho video này. Học viên có thể tải tài liệu
+    bằng cách nhấn "Tải tài liệu" bên dưới video.`,
+    description: 'Thông điệp hiển thị khi tải tài liệu đính kèm',
   },
   uploadHandoutError: {
     id: 'authoring.videoeditor.handout.error.uploadHandoutError',
-    defaultMessage: 'Failed to upload handout. Please try again.',
-    description: 'Message presented to user when handout fails to upload',
+    defaultMessage: 'Không thể tải tài liệu đính kèm. Vui lòng thử lại.',
+    description: 'Thông báo hiển thị khi tải tài liệu đính kèm thất bại',
   },
   fileSizeError: {
     id: 'authoring.videoeditor.handout.error.fileSizeError',
-    defaultMessage: 'Handout files must be 20 MB or less. Please resize the file and try again.',
-    description: 'Message presented to user when handout file size is larger than 20 MB',
+    defaultMessage: 'Tài liệu đính kèm phải có dung lượng tối đa 20 MB. Vui lòng giảm kích thước tệp và thử lại.',
+    description: 'Thông báo khi tệp tài liệu đính kèm lớn hơn 20 MB',
   },
   handoutHelpMessage: {
     id: 'authoring.videoeditor.handout.handoutHelpMessage',
-    defaultMessage: 'Learners can download this file by clicking "Download Handout" below the video.',
-    description: 'Message presented to user when a handout is present',
+    defaultMessage: 'Học viên có thể tải tài liệu này bằng cách nhấn "Tải tài liệu" bên dưới video.',
+    description: 'Thông điệp hiển thị khi đã có tài liệu đính kèm',
   },
   deleteHandout: {
     id: 'authoring.videoeditor.handout.deleteHandout',
-    defaultMessage: 'Delete',
-    description: 'Message Presented To user for action to delete handout',
+    defaultMessage: 'Xóa',
+    description: 'Nhãn hành động để xóa tài liệu đính kèm',
   },
   replaceHandout: {
     id: 'authoring.videoeditor.handout.replaceHandout',
-    defaultMessage: 'Replace',
-    description: 'Message Presented To user for action to replace handout',
+    defaultMessage: 'Thay thế',
+    description: 'Nhãn hành động để thay thế tài liệu đính kèm',
   },
   downloadHandout: {
     id: 'authoring.videoeditor.handout.downloadHandout',
-    defaultMessage: 'Download',
-    description: 'Message Presented To user for action to download handout',
+    defaultMessage: 'Tải xuống',
+    description: 'Nhãn hành động để tải tài liệu đính kèm',
   },
 });
 

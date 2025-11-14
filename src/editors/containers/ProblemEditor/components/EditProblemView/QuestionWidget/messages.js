@@ -4,13 +4,13 @@ const messages = defineMessages({
 
   questionWidgetTitle: {
     id: 'authoring.questionwidget.question.questionWidgetTitle',
-    defaultMessage: 'Question',
-    description: 'Question Title',
+    defaultMessage: 'Câu hỏi',
+    description: 'Tiêu đề phần câu hỏi',
   },
   placeholder: {
     id: 'authoring.problemEditor.questionwidget.placeholder',
-    defaultMessage: 'Enter your question',
-    description: 'Placeholder text for tinyMCE editor',
+    defaultMessage: 'Nhập câu hỏi của bạn',
+    description: 'Placeholder cho trình soạn thảo tinyMCE',
   },
 });
 

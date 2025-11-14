@@ -4,207 +4,215 @@ const messages = defineMessages({
 
   settingsWidgetTitle: {
     id: 'authoring.problemeditor.settings.settingsWidgetTitle',
-    defaultMessage: 'Settings',
+    defaultMessage: 'Cài đặt',
     description: 'Settings Title',
   },
   showAdvanceSettingsButtonText: {
     id: 'authoring.problemeditor.settings.showAdvancedButton',
-    defaultMessage: 'Show advanced settings',
+    defaultMessage: 'Hiển thị cài đặt nâng cao',
     description: 'Button text to show advanced settings',
   },
   settingsDeleteIconAltText: {
     id: 'authoring.problemeditor.settings.delete.icon.alt',
-    defaultMessage: 'Delete answer',
+    defaultMessage: 'Xóa đáp án',
     description: 'Alt text for delete icon',
   },
   advancedSettingsLinkText: {
     id: 'authoring.problemeditor.settings.advancedSettingLink.text',
-    defaultMessage: 'Set a default value in advanced settings',
+    defaultMessage: 'Thiết lập giá trị mặc định trong phần cài đặt nâng cao',
     description: 'Advanced settings link text',
   },
+
   hintSettingTitle: {
     id: 'authoring.problemeditor.settings.hint.title',
-    defaultMessage: 'Hints',
+    defaultMessage: 'Gợi ý',
     description: 'Hint settings card title',
   },
   hintInputLabel: {
     id: 'authoring.problemeditor.settings.hint.inputLabel',
-    defaultMessage: 'Hint',
+    defaultMessage: 'Gợi ý',
     description: 'Hint text input label',
   },
   addHintButtonText: {
     id: 'authoring.problemeditor.settings.hint.addHintButton',
-    defaultMessage: 'Add hint',
+    defaultMessage: 'Thêm gợi ý',
     description: 'Add hint button text',
   },
   noHintSummary: {
     id: 'authoring.problemeditor.settings.hint.noHintSummary',
-    defaultMessage: 'None',
+    defaultMessage: 'Không có',
     description: 'Summary text for no hints',
   },
   hintSummary: {
     id: 'authoring.problemeditor.settings.hint.summary',
-    defaultMessage: '{hint} {count, plural, =0 {} other {(+# more)}}',
+    defaultMessage: '{hint} {count, plural, =0 {} other {(+# gợi ý nữa)}}',
     description: 'Summary text for hint settings',
   },
+
   resetSettingsTitle: {
     id: 'authoring.problemeditor.settings.reset.title',
-    defaultMessage: 'Show reset option',
+    defaultMessage: 'Hiện tùy chọn đặt lại',
     description: 'Reset settings card title',
   },
   resetSettingsTrue: {
     id: 'authoring.problemeditor.settings.reset.true',
-    defaultMessage: 'True',
+    defaultMessage: 'Bật',
     description: 'True option for reset',
   },
   resetSettingsFalse: {
     id: 'authoring.problemeditor.settings.reset.false',
-    defaultMessage: 'False',
+    defaultMessage: 'Tắt',
     description: 'False option for reset',
   },
   resetSettingText: {
     id: 'authoring.problemeditor.settings.reset.text',
-    defaultMessage: "Determines whether a 'Reset' button is shown so the user may reset their answer, generally for use in practice or formative assessments.",
+    defaultMessage: 'Xác định việc có hiển thị nút "Đặt lại" để người học có thể đặt lại câu trả lời hay không, thường dùng cho bài luyện tập hoặc đánh giá dạng hình thành (formative).',
     description: 'Reset settings card text',
   },
+
   scoringSettingsTitle: {
     id: 'authoring.problemeditor.settings.scoring.title',
-    defaultMessage: 'Scoring',
+    defaultMessage: 'Chấm điểm',
     description: 'Scoring settings card title',
   },
   scoringAttemptsInputLabel: {
     id: 'authoring.problemeditor.settings.scoring.attempts.inputLabel',
-    defaultMessage: 'Attempts',
+    defaultMessage: 'Số lượt làm bài',
     description: 'Scoring attempts text input label',
   },
   scoringWeightInputLabel: {
     id: 'authoring.problemeditor.settings.scoring.weight.inputLabel',
-    defaultMessage: 'Points',
+    defaultMessage: 'Điểm',
     description: 'Scoring weight input label',
   },
   unlimitedAttemptsSummary: {
     id: 'authoring.problemeditor.settings.scoring.unlimited',
-    defaultMessage: 'Unlimited attempts',
+    defaultMessage: 'Không giới hạn lượt làm bài',
     description: 'Summary text for unlimited attempts',
   },
   attemptsSummary: {
     id: 'authoring.problemeditor.settings.scoring.attempts',
-    defaultMessage: '{attempts, plural, =1 {# attempt} other {# attempts}}',
+    defaultMessage: '{attempts, plural, =1 {# lượt làm bài} other {# lượt làm bài}}',
     description: 'Summary text for number of attempts',
   },
   unlimitedAttemptsCheckboxLabel: {
     id: 'authoring.problemeditor.settings.scoring.attempts.unlimitedCheckbox',
-    defaultMessage: 'Unlimited attempts',
+    defaultMessage: 'Không giới hạn lượt làm bài',
     description: 'Label for unlimited attempts checkbox',
   },
   weightSummary: {
     id: 'authoring.problemeditor.settings.scoring.weight',
-    defaultMessage: '{weight, plural, =0 {Ungraded} other {# points}}',
+    defaultMessage: '{weight, plural, =0 {Không tính điểm} other {# điểm}}',
     description: 'Summary text for scoring weight',
   },
   scoringSettingsLabel: {
     id: 'authoring.problemeditor.settings.scoring.label',
-    defaultMessage: 'Specify point weight and the number of answer attempts',
+    defaultMessage: 'Thiết lập số điểm và số lượt làm bài được phép',
     description: 'Descriptive text for scoring settings',
   },
   attemptsHint: {
     id: 'authoring.problemeditor.settings.scoring.attempts.hint',
-    defaultMessage: 'If a default value is not set in advanced settings, unlimited attempts are allowed',
+    defaultMessage: 'Nếu không có giá trị mặc định trong cài đặt nâng cao, hệ thống sẽ cho phép không giới hạn lượt làm bài.',
     description: 'Summary text for scoring weight',
   },
   weightHint: {
     id: 'authoring.problemeditor.settings.scoring.weight.hint',
-    defaultMessage: 'If a value is not set, the problem is worth one point',
+    defaultMessage: 'Nếu không đặt giá trị, bài tập sẽ có giá trị mặc định là 1 điểm.',
     description: 'Summary text for scoring weight',
   },
+
   showAnswerSettingsTitle: {
     id: 'authoring.problemeditor.settings.showAnswer.title',
-    defaultMessage: 'Show answer',
+    defaultMessage: 'Hiển thị đáp án',
     description: 'Show Answer settings card title',
   },
   showAnswerAttemptsInputLabel: {
     id: 'authoring.problemeditor.settings.showAnswer.attempts.inputLabel',
-    defaultMessage: 'Number of Attempts',
+    defaultMessage: 'Số lượt làm bài',
     description: 'Show Answer attempts text input label',
   },
   showAnswerSettingText: {
     id: 'authoring.problemeditor.settings.showAnswer.text',
-    defaultMessage: 'Define when learners can see the correct answer.',
+    defaultMessage: 'Xác định thời điểm người học có thể xem đáp án đúng.',
     description: 'Show Answer settings card text',
   },
+
   timerSettingsTitle: {
     id: 'authoring.problemeditor.settings.timer.title',
-    defaultMessage: 'Time between attempts',
+    defaultMessage: 'Thời gian giữa các lần nộp bài',
     description: 'Timer settings card title',
   },
   timerSummary: {
     id: 'authoring.problemeditor.settings.timer.summary',
-    defaultMessage: '{time} seconds',
+    defaultMessage: '{time} giây',
     description: 'Summary text for timer settings',
   },
   timerSettingText: {
     id: 'authoring.problemeditor.settings.timer.text',
-    defaultMessage: 'Seconds a student must wait between submissions for a problem with multiple attempts.',
+    defaultMessage: 'Số giây học viên phải chờ giữa các lần nộp bài đối với bài tập cho phép nhiều lượt làm.',
     description: 'Timer settings card text',
   },
   timerInputLabel: {
     id: 'authoring.problemeditor.settings.timer.inputLabel',
-    defaultMessage: 'Seconds',
+    defaultMessage: 'Giây',
     description: 'Timer text input label',
   },
+
   typeSettingTitle: {
     id: 'authoring.problemeditor.settings.type.title',
-    defaultMessage: 'Type',
+    defaultMessage: 'Kiểu',
     description: 'Type settings card title',
   },
+
   'SwitchButtonLabel-advanced': {
     id: 'authoring.problemeditor.settings.switchtoeditor.label.advanced',
-    defaultMessage: 'Switch to advanced editor',
+    defaultMessage: 'Chuyển sang trình soạn thảo nâng cao',
     description: 'button to switch to the advanced mode of the editor',
   },
   'SwitchButtonLabel-markdown': {
     id: 'authoring.problemeditor.settings.switchtoeditor.label.markdown',
-    defaultMessage: 'Switch to markdown editor',
+    defaultMessage: 'Chuyển sang trình soạn thảo Markdown',
     description: 'button to switch to the markdown editor',
   },
   'ConfirmSwitchMessage-advanced': {
     id: 'authoring.problemeditor.settings.switchtoeditor.ConfirmSwitchMessage.advanced',
-    defaultMessage: 'If you use the advanced editor, this problem will be converted to OLX. Depending on what edits you make to the OLX, you may not be able to return to the simple editor.',
+    defaultMessage: 'Nếu bạn dùng trình soạn thảo nâng cao, bài tập này sẽ được chuyển sang định dạng OLX. Tùy vào những chỉnh sửa bạn thực hiện với OLX, có thể bạn sẽ không thể quay lại trình soạn thảo đơn giản.',
     description: 'message to confirm that a user wants to use the advanced editor',
   },
   'ConfirmSwitchMessage-markdown': {
     id: 'authoring.problemeditor.settings.switchtoeditor.ConfirmSwitchMessage.markdown',
-    defaultMessage: 'Some edits that are possible with the markdown editor are not supported by the simple editor, so you may not be able to change back to the simple editor.',
+    defaultMessage: 'Một số chỉnh sửa khả dụng trong trình soạn thảo Markdown không được hỗ trợ bởi trình soạn thảo đơn giản, vì vậy có thể bạn sẽ không thể quay lại dùng trình soạn thảo đơn giản.',
     description: 'message to confirm that a user wants to use the markdown editor',
   },
   'ConfirmSwitchMessageTitle-advanced': {
     id: 'authoring.problemeditor.settings.switchtoeditor.ConfirmSwitchMessageTitle.advanced',
-    defaultMessage: 'Convert to OLX?',
+    defaultMessage: 'Chuyển sang OLX?',
     description: 'message to confirm that a user wants to use the advanced editor',
   },
   'ConfirmSwitchMessageTitle-markdown': {
     id: 'authoring.problemeditor.settings.switchtoeditor.ConfirmSwitchMessageTitle.markdown',
-    defaultMessage: 'Convert to Markdown?',
+    defaultMessage: 'Chuyển sang Markdown?',
     description: 'message to confirm that a user wants to use the markdown editor',
   },
   'ConfirmSwitchButtonLabel-advanced': {
     id: 'authoring.problemeditor.settings.switchtoeditor.ConfirmSwitchButtonLabel.advanced',
-    defaultMessage: 'Switch to advanced editor',
+    defaultMessage: 'Chuyển sang trình soạn thảo nâng cao',
     description: 'message to confirm that a user wants to use the advanced editor',
   },
   'ConfirmSwitchButtonLabel-markdown': {
     id: 'authoring.problemeditor.settings.switchtoeditor.ConfirmSwitchButtonLabel.markdown',
-    defaultMessage: 'Switch to markdown editor',
+    defaultMessage: 'Chuyển sang trình soạn thảo Markdown',
     description: 'message to confirm that a user wants to use the markdown editor',
   },
+
   explanationInputLabel: {
     id: 'authoring.problemeditor.settings.showAnswer.explanation.inputLabel',
-    defaultMessage: 'Explanation',
+    defaultMessage: 'Giải thích',
     description: 'answer explanation input label',
   },
   explanationSettingText: {
     id: 'authoring.problemeditor.settings.showAnswer.explanation.text',
-    defaultMessage: 'Provide an explanation for the correct answer.',
+    defaultMessage: 'Cung cấp phần giải thích cho đáp án đúng.',
     description: 'Solution Explanation text',
   },
 });

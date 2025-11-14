@@ -3,52 +3,49 @@ import { defineMessages } from '@edx/frontend-platform/i18n';
 const messages = defineMessages({
   toleranceSettingTitle: {
     id: 'problemEditor.settings.tolerance.title',
-    defaultMessage: 'Tolerance',
-    description: 'Title for tolerance setting menu',
+    defaultMessage: 'Sai số cho phép',
+    description: 'Tiêu đề cho menu thiết lập sai số',
   },
   noneToleranceSummary: {
     id: 'problemEditor.settings.tolerance.summary.none',
-    defaultMessage: 'None',
-    description: 'message provided when no tolerance is set for a problem',
+    defaultMessage: 'Không có',
+    description: 'Thông báo khi bài tập chưa thiết lập sai số',
   },
   toleranceSettingText: {
     id: 'problemEditor.settings.tolerance.description.text',
-    defaultMessage: 'The margin of error on either side of an answer.',
-    description: 'Description of the features of setting a tolerance for a problem',
+    defaultMessage: 'Biên độ sai số được chấp nhận ở hai phía của đáp án đúng.',
+    description: 'Mô tả chức năng thiết lập sai số cho một bài tập',
   },
   toleranceValueInputLabel: {
     id: 'problemEditor.settings.tolerance.valueinput',
-    defaultMessage: 'Tolerance',
-    description: 'floating label for input to set the value of the tolerance',
+    defaultMessage: 'Sai số cho phép',
+    description: 'Nhãn nổi cho ô nhập giá trị sai số',
   },
   toleranceAnswerRangeWarning: {
     id: 'problemEditor.settings.tolerance.answerrangewarning',
-    defaultMessage: 'Tolerance cannot be applied to an answer range',
-    description: 'a warning to users that tolerance cannot be applied to an answer range.',
+    defaultMessage: 'Không thể áp dụng sai số cho một khoảng đáp án.',
+    description: 'Cảnh báo rằng sai số không áp dụng được cho khoảng đáp án',
   },
   toleranceMultipleAnswersWarning: {
     id: 'problemEditor.settings.tolerance.toleranceMultipleAnswersWarning',
-    defaultMessage: 'Tolerance cannot be applied to multiple correct answers',
-    description: 'a warning to users that tolerance cannot be applied to multiple correct answers.',
+    defaultMessage: 'Không thể áp dụng sai số cho nhiều đáp án đúng.',
+    description: 'Cảnh báo rằng sai số không áp dụng được khi có nhiều đáp án đúng',
   },
   typesPercentage: {
     id: 'problemEditor.settings.tolerance.type.percent',
-    defaultMessage: 'Percentage',
-    description: 'A possible value type for a tolerance',
-
+    defaultMessage: 'Phần trăm',
+    description: 'Một kiểu giá trị có thể dùng cho sai số',
   },
   typesNumber: {
     id: 'problemEditor.settings.tolerance.type.number',
-    defaultMessage: 'Number',
-    description: 'A possible value type for a tolerance',
-
+    defaultMessage: 'Giá trị số',
+    description: 'Một kiểu giá trị có thể dùng cho sai số',
   },
   typesNone: {
     id: 'problemEditor.settings.tolerance.type.none',
-    defaultMessage: 'None',
-    description: 'A possible value type for a tolerance',
+    defaultMessage: 'Không có',
+    description: 'Một kiểu giá trị có thể dùng cho sai số',
   },
-
 });
 
 export default messages;

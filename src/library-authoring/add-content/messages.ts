@@ -3,208 +3,208 @@ import { defineMessages } from '@edx/frontend-platform/i18n';
 export const messages = defineMessages({
   collectionButton: {
     id: 'course-authoring.library-authoring.add-content.buttons.collection',
-    defaultMessage: 'Collection',
-    description: 'Content of button to create a Collection.',
+    defaultMessage: 'Bộ sưu tập',
+    description: 'Nội dung của nút tạo Bộ sưu tập.',
   },
   unitButton: {
     id: 'course-authoring.library-authoring.add-content.buttons.unit',
-    defaultMessage: 'Unit',
-    description: 'Content of button to create a Unit.',
+    defaultMessage: 'Đơn vị',
+    description: 'Nội dung của nút tạo Đơn vị.',
   },
   sectionButton: {
     id: 'course-authoring.library-authoring.add-content.buttons.section',
-    defaultMessage: 'Section',
-    description: 'Content of button to create a Section.',
+    defaultMessage: 'Phần',
+    description: 'Nội dung của nút tạo Phần.',
   },
   subsectionButton: {
     id: 'course-authoring.library-authoring.add-content.buttons.subsection',
-    defaultMessage: 'Subsection',
-    description: 'Content of button to create a Subsection.',
+    defaultMessage: 'Mục con',
+    description: 'Nội dung của nút tạo Mục con.',
   },
   libraryContentButton: {
     id: 'course-authoring.library-authoring.add-content.buttons.library-content',
-    defaultMessage: 'Existing Library Content',
-    description: 'Content of button to add existing library content to a collection or container.',
+    defaultMessage: 'Nội dung thư viện có sẵn',
+    description: 'Nội dung của nút thêm nội dung thư viện có sẵn vào bộ sưu tập hoặc container.',
   },
   addToButton: {
     id: 'course-authoring.library-authoring.add-content.buttons.library-content.add-to-collection',
-    defaultMessage: 'Add to Collection',
-    description: 'Button to add library content to a collection.',
+    defaultMessage: 'Thêm vào Bộ sưu tập',
+    description: 'Nút để thêm nội dung thư viện vào bộ sưu tập.',
   },
   selectContentTitle: {
     id: 'course-authoring.library-authoring.add-content.select-components',
-    defaultMessage: 'Select components',
-    description: 'Title for the content picker when selecting components in library.',
+    defaultMessage: 'Chọn thành phần',
+    description: 'Tiêu đề cho bộ chọn nội dung khi chọn thành phần trong thư viện.',
   },
   selectedContent: {
     id: 'course-authoring.library-authoring.add-content.selected-components',
-    defaultMessage: '{count, plural, one {# Selected Component} other {# Selected Components}}',
-    description: 'Title for selected components in library.',
+    defaultMessage: '{count, plural, one {# thành phần đã chọn} other {# thành phần đã chọn}}',
+    description: 'Tiêu đề cho phần thành phần đã chọn trong thư viện.',
   },
   textTypeButton: {
     id: 'course-authoring.library-authoring.add-content.buttons.types.text',
-    defaultMessage: 'Text',
-    description: 'Content of button to create a Text component.',
+    defaultMessage: 'Văn bản',
+    description: 'Nội dung của nút tạo thành phần Văn bản.',
   },
   problemTypeButton: {
     id: 'course-authoring.library-authoring.add-content.buttons.types.problem',
-    defaultMessage: 'Problem',
-    description: 'Content of button to create a Problem component.',
+    defaultMessage: 'Bài tập',
+    description: 'Nội dung của nút tạo thành phần Bài tập.',
   },
   openResponseTypeButton: {
     id: 'course-authoring.library-authoring.add-content.buttons.types.open-response',
-    defaultMessage: 'Open Reponse',
-    description: 'Content of button to create a Open Response component.',
+    defaultMessage: 'Câu trả lời mở',
+    description: 'Nội dung của nút tạo thành phần Câu trả lời mở.',
   },
   dragDropTypeButton: {
     id: 'course-authoring.library-authoring.add-content.buttons.types.drag-drop',
-    defaultMessage: 'Drag Drop',
-    description: 'Content of button to create a Drag Drod component.',
+    defaultMessage: 'Kéo thả',
+    description: 'Nội dung của nút tạo thành phần Kéo thả.',
   },
   videoTypeButton: {
     id: 'course-authoring.library-authoring.add-content.buttons.types.video',
     defaultMessage: 'Video',
-    description: 'Content of button to create a Video component.',
+    description: 'Nội dung của nút tạo thành phần Video.',
   },
   otherTypeButton: {
     id: 'course-authoring.library-authoring.add-content.buttons.types.other',
-    defaultMessage: 'Advanced / Other',
-    description: 'Content of button to create a Advanced / Other component.',
+    defaultMessage: 'Nâng cao / Khác',
+    description: 'Nội dung của nút tạo thành phần Nâng cao / Khác.',
   },
   pasteButton: {
     id: 'course-authoring.library-authoring.add-content.buttons.paste',
-    defaultMessage: 'Paste From Clipboard',
-    description: 'Content of button to paste from clipboard.',
+    defaultMessage: 'Dán từ bộ nhớ tạm',
+    description: 'Nội dung của nút dán từ bộ nhớ tạm.',
   },
   successCreateMessage: {
     id: 'course-authoring.library-authoring.add-content.success.text',
-    defaultMessage: 'Content created successfully.',
-    description: 'Message when creation of content in library is success',
+    defaultMessage: 'Tạo nội dung thành công.',
+    description: 'Thông báo khi tạo nội dung trong thư viện thành công.',
   },
   errorCreateMessage: {
     id: 'course-authoring.library-authoring.add-content.error.text',
-    defaultMessage: 'There was an error creating the content.',
-    description: 'Message when creation of content in library is on error.',
+    defaultMessage: 'Đã xảy ra lỗi khi tạo nội dung.',
+    description: 'Thông báo khi việc tạo nội dung trong thư viện bị lỗi.',
   },
   errorCreateMessageWithDetail: {
     id: 'course-authoring.library-authoring.add-content.error.text-detail',
-    defaultMessage: 'There was an error creating the content: {detail}',
+    defaultMessage: 'Đã xảy ra lỗi khi tạo nội dung: {detail}',
     description: (
-      'Message when creation of content in library is on error.'
-      + ' The {detail} text provides more information about the error.'
+      'Thông báo khi việc tạo nội dung trong thư viện bị lỗi.'
+      + ' {detail} cung cấp thêm thông tin về lỗi.'
     ),
   },
   successAssociateComponentToContainerMessage: {
     id: 'course-authoring.library-authoring.associate-container-content.success.text',
-    defaultMessage: 'Content linked successfully.',
-    description: 'Message when linking of content to a container in library is success',
+    defaultMessage: 'Liên kết nội dung thành công.',
+    description: 'Thông báo khi liên kết nội dung với container trong thư viện thành công.',
   },
   errorAssociateComponentToContainerMessage: {
     id: 'course-authoring.library-authoring.associate-container-content.error.text',
-    defaultMessage: 'There was an error linking the content to this container.',
-    description: 'Message when linking of content to a container in library fails',
+    defaultMessage: 'Đã xảy ra lỗi khi liên kết nội dung với container này.',
+    description: 'Thông báo khi việc liên kết nội dung với container trong thư viện bị lỗi.',
   },
   addContentTitle: {
     id: 'course-authoring.library-authoring.sidebar.title.add-content',
-    defaultMessage: 'Add Content',
-    description: 'Title of add content in library container.',
+    defaultMessage: 'Thêm nội dung',
+    description: 'Tiêu đề phần thêm nội dung trong container của thư viện.',
   },
   successPasteClipboardMessage: {
     id: 'course-authoring.library-authoring.paste-clipboard.success.text',
-    defaultMessage: 'Content pasted successfully.',
-    description: 'Message when pasting clipboard in library is successful',
+    defaultMessage: 'Dán nội dung thành công.',
+    description: 'Thông báo khi dán nội dung từ bộ nhớ tạm trong thư viện thành công.',
   },
   errorPasteClipboardMessage: {
     id: 'course-authoring.library-authoring.paste-clipboard.error.text',
-    defaultMessage: 'There was an error pasting the content.',
-    description: 'Message when pasting clipboard in library errors',
+    defaultMessage: 'Đã xảy ra lỗi khi dán nội dung.',
+    description: 'Thông báo khi dán nội dung từ bộ nhớ tạm trong thư viện bị lỗi.',
   },
   errorPasteClipboardMessageWithDetail: {
     id: 'course-authoring.library-authoring.paste-clipboard.error.text-detail',
-    defaultMessage: 'There was an error pasting the content: {detail}',
+    defaultMessage: 'Đã xảy ra lỗi khi dán nội dung: {detail}',
     description: (
-      'Message when pasting clipboard in library errors.'
-      + ' The {detail} text provides more information about the error.'
+      'Thông báo khi dán nội dung từ bộ nhớ tạm trong thư viện bị lỗi.'
+      + ' {detail} cung cấp thêm thông tin về lỗi.'
     ),
   },
   pastingClipboardMessage: {
     id: 'course-authoring.library-authoring.paste-clipboard.loading.text',
-    defaultMessage: 'Pasting content from clipboard...',
-    description: 'Message when in process of pasting content in library',
+    defaultMessage: 'Đang dán nội dung từ bộ nhớ tạm...',
+    description: 'Thông báo khi đang trong quá trình dán nội dung trong thư viện.',
   },
   unsupportedBlockPasteClipboardMessage: {
     id: 'course-authoring.library-authoring.paste-clipboard.unsupportedblock-error.text',
-    defaultMessage: 'Libraries do not support this type of content yet.',
-    description: 'Message when unsupported block is pasted in library',
+    defaultMessage: 'Thư viện hiện chưa hỗ trợ loại nội dung này.',
+    description: 'Thông báo khi dán một khối nội dung không được hỗ trợ trong thư viện.',
   },
   backToAddContentListButton: {
     id: 'course-authoring.library-authoring.add-content.buttons.back',
-    defaultMessage: 'Back to List',
-    description: 'Messag of button in advanced creation view to return to the main creation view.',
+    defaultMessage: 'Quay lại danh sách',
+    description: 'Nội dung nút trong giao diện tạo nâng cao để quay lại giao diện tạo chính.',
   },
 });
 
 export const unitMessages = defineMessages({
   addToButton: {
     id: 'course-authoring.library-authoring.add-content.buttons.library-content.add-to-unit',
-    defaultMessage: 'Add to Unit',
-    description: 'Button to add library content to a unit.',
+    defaultMessage: 'Thêm vào Đơn vị',
+    description: 'Nút để thêm nội dung thư viện vào một Đơn vị.',
   },
 });
 
 export const subsectionMessages = defineMessages({
   unitButton: {
     id: 'course-authoring.library-authoring.add-content.buttons.new-unit',
-    defaultMessage: 'New Unit',
-    description: 'Content of button to create a new Unit in a Subsection.',
+    defaultMessage: 'Đơn vị mới',
+    description: 'Nội dung của nút tạo Đơn vị mới trong một Mục con.',
   },
   libraryContentButton: {
     id: 'course-authoring.library-authoring.add-content.buttons.library-unit',
-    defaultMessage: 'Existing Unit',
-    description: 'Content of button to add an existing Unit to a Subsection.',
+    defaultMessage: 'Đơn vị hiện có',
+    description: 'Nội dung của nút thêm Đơn vị hiện có vào một Mục con.',
   },
   addToButton: {
     id: 'course-authoring.library-authoring.add-content.buttons.library-content.add-to-subsection',
-    defaultMessage: 'Add to Subsection',
-    description: 'Button to add Units to a Subsection.',
+    defaultMessage: 'Thêm vào Mục con',
+    description: 'Nút để thêm Đơn vị vào một Mục con.',
   },
   selectContentTitle: {
     id: 'course-authoring.library-authoring.add-content.select-units',
-    defaultMessage: 'Select units',
-    description: 'Title for the content picker when selecting units in library.',
+    defaultMessage: 'Chọn đơn vị',
+    description: 'Tiêu đề cho bộ chọn nội dung khi chọn Đơn vị trong thư viện.',
   },
   selectedContent: {
     id: 'course-authoring.library-authoring.add-content.selected-units',
-    defaultMessage: '{count, plural, one {# Selected Unit} other {# Selected Units}}',
-    description: 'Title for selected units in library.',
+    defaultMessage: '{count, plural, one {# đơn vị đã chọn} other {# đơn vị đã chọn}}',
+    description: 'Tiêu đề cho phần các Đơn vị đã chọn trong thư viện.',
   },
 });
 
 export const sectionMessages = defineMessages({
   subsectionButton: {
     id: 'course-authoring.library-authoring.add-content.buttons.new-subsection',
-    defaultMessage: 'New Subsection',
-    description: 'Content of button to create a new Subsection in a Section.',
+    defaultMessage: 'Mục con mới',
+    description: 'Nội dung của nút tạo Mục con mới trong một Phần.',
   },
   libraryContentButton: {
     id: 'course-authoring.library-authoring.add-content.buttons.library-subsection',
-    defaultMessage: 'Existing Subsection',
-    description: 'Content of button to add an existing Subsection to a Section.',
+    defaultMessage: 'Mục con hiện có',
+    description: 'Nội dung của nút thêm Mục con hiện có vào một Phần.',
   },
   addToButton: {
     id: 'course-authoring.library-authoring.add-content.buttons.library-content.add-to-section',
-    defaultMessage: 'Add to Section',
-    description: 'Button to add library content to a section.',
+    defaultMessage: 'Thêm vào Phần',
+    description: 'Nút để thêm nội dung thư viện vào một Phần.',
   },
   selectContentTitle: {
     id: 'course-authoring.library-authoring.add-content.select-subsections',
-    defaultMessage: 'Select subsections',
-    description: 'Title for the content picker when selecting subsections in library.',
+    defaultMessage: 'Chọn các mục con',
+    description: 'Tiêu đề cho bộ chọn nội dung khi chọn các Mục con trong thư viện.',
   },
   selectedContent: {
     id: 'course-authoring.library-authoring.add-content.selected-subsections',
-    defaultMessage: '{count, plural, one {# Selected Subsections} other {# Selected Subsections}}',
-    description: 'Title for selected subsections in library.',
+    defaultMessage: '{count, plural, one {# mục con đã chọn} other {# mục con đã chọn}}',
+    description: 'Tiêu đề cho phần các Mục con đã chọn trong thư viện.',
   },
 });
 

@@ -3,63 +3,63 @@ import { defineMessages } from '@edx/frontend-platform/i18n';
 const messages = defineMessages({
   title1: {
     id: 'course-authoring.import.sidebar.title1',
-    defaultMessage: 'Why import a course?',
+    defaultMessage: 'Vì sao cần nhập một khóa học?',
   },
   description1: {
     id: 'course-authoring.import.sidebar.description1',
-    defaultMessage: 'You may want to run a new version of an existing course, or replace an existing course altogether. Or, you may have developed a course outside {studioShortName}.',
+    defaultMessage: 'Bạn có thể muốn chạy một phiên bản mới của một khóa học hiện có, hoặc thay thế hoàn toàn một khóa học hiện tại. Hoặc bạn có thể đã phát triển khóa học ở bên ngoài {studioShortName}.',
   },
   importedContent: {
     id: 'course-authoring.import.sidebar.importedContent',
-    defaultMessage: 'What content is imported?',
+    defaultMessage: 'Những nội dung nào sẽ được nhập?',
   },
   importedContentHeading: {
     id: 'course-authoring.import.sidebar.importedContentHeading',
-    defaultMessage: 'The following content is imported.',
+    defaultMessage: 'Các nội dung sau sẽ được nhập:',
   },
   content1: {
     id: 'course-authoring.import.sidebar.content1',
-    defaultMessage: 'Course content and structure',
+    defaultMessage: 'Nội dung và cấu trúc khóa học',
   },
   content2: {
     id: 'course-authoring.import.sidebar.content2',
-    defaultMessage: 'Course dates',
+    defaultMessage: 'Các mốc thời gian của khóa học',
   },
   content3: {
     id: 'course-authoring.import.sidebar.content3',
-    defaultMessage: 'Grading policy',
+    defaultMessage: 'Chính sách chấm điểm',
   },
   content4: {
     id: 'course-authoring.import.sidebar.content4',
-    defaultMessage: 'Any group configurations',
+    defaultMessage: 'Mọi cấu hình nhóm',
   },
   content5: {
     id: 'course-authoring.import.sidebar.content5',
-    defaultMessage: 'Settings on the advanced settings page, including MATLAB API keys and LTI passports',
+    defaultMessage: 'Các thiết lập trong trang cài đặt nâng cao, bao gồm khóa API MATLAB và LTI passports',
   },
   notImportedContent: {
     id: 'course-authoring.import.sidebar.notImportedContent',
-    defaultMessage: 'The following content is not exported.',
+    defaultMessage: 'Các nội dung sau sẽ không được xuất:',
   },
   content6: {
     id: 'course-authoring.import.sidebar.content6',
-    defaultMessage: 'Learner-specific content, such as learner grades and discussion forum data',
+    defaultMessage: 'Nội dung riêng của người học, như điểm số và dữ liệu diễn đàn thảo luận',
   },
   content7: {
     id: 'course-authoring.import.sidebar.content7',
-    defaultMessage: 'The course team',
+    defaultMessage: 'Nhóm phụ trách khóa học',
   },
   warningTitle: {
     id: 'course-authoring.import.sidebar.warningTitle',
-    defaultMessage: 'Warning: importing while a course is running',
+    defaultMessage: 'Cảnh báo: nhập khóa học khi khóa đang chạy',
   },
   warningDescription: {
     id: 'course-authoring.import.sidebar.warningDescription',
-    defaultMessage: 'If you perform an import while your course is running, and you change the URL names (or url_name nodes) of any problem components, the student data associated with those problem components may be lost. This data includes students\' problem scores.',
+    defaultMessage: 'Nếu bạn thực hiện thao tác nhập trong khi khóa học đang chạy và thay đổi tên URL (hoặc các nút url_name) của bất kỳ thành phần bài tập nào, dữ liệu của người học gắn với các thành phần đó có thể bị mất. Dữ liệu này bao gồm cả điểm bài tập của người học.',
   },
   learnMoreButtonTitle: {
     id: 'course-authoring.import.sidebar.learnMoreButtonTitle',
-    defaultMessage: 'Learn more about importing a course',
+    defaultMessage: 'Tìm hiểu thêm về việc nhập khóa học',
   },
 });
 

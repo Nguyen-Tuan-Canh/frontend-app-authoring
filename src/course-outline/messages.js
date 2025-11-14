@@ -3,19 +3,19 @@ import { defineMessages } from '@edx/frontend-platform/i18n';
 const messages = defineMessages({
   headingTitle: {
     id: 'course-authoring.course-outline.headingTitle',
-    defaultMessage: 'Course outline',
+    defaultMessage: 'Khung khóa học',
   },
   headingSubtitle: {
     id: 'course-authoring.course-outline.subTitle',
-    defaultMessage: 'Content',
+    defaultMessage: 'Nội dung',
   },
   alertSuccessTitle: {
     id: 'course-authoring.course-outline.reindex.alert.success.title',
-    defaultMessage: 'Course index',
+    defaultMessage: 'Lập chỉ mục khóa học',
   },
   alertSuccessDescription: {
     id: 'course-authoring.course-outline.reindex.alert.success.description',
-    defaultMessage: 'Course has been successfully reindexed.',
+    defaultMessage: 'Khóa học đã được lập chỉ mục lại thành công.',
   },
   alertSuccessAriaLabelledby: {
     id: 'course-authoring.course-outline.reindex.alert.success.aria.labelledby',
@@ -27,53 +27,53 @@ const messages = defineMessages({
   },
   newSectionButton: {
     id: 'course-authoring.course-outline.section-list.button.new-section',
-    defaultMessage: 'New section',
-    description: 'Text of button to create new section in course outline',
+    defaultMessage: 'Phần mới',
+    description: 'Văn bản của nút tạo phần (section) mới trong khung khóa học',
   },
   useSectionFromLibraryButton: {
     id: 'course-authoring.course-outline.button.use-section-from-library',
-    defaultMessage: 'Use section from library',
-    description: 'Text of the button to add a section from a library in a course.',
+    defaultMessage: 'Dùng phần từ thư viện',
+    description: 'Văn bản của nút thêm một phần từ thư viện vào khóa học.',
   },
   exportTagsCreatingToastMessage: {
     id: 'course-authoring.course-outline.export-tags.toast.creating.message',
-    defaultMessage: 'Please wait. Creating export file for course tags...',
-    description: 'In progress message in toast when exporting tags of a course',
+    defaultMessage: 'Vui lòng chờ. Đang tạo tệp xuất cho thẻ của khóa học...',
+    description: 'Thông báo đang xử lý trong toast khi xuất thẻ của khóa học',
   },
   exportTagsSuccessToastMessage: {
     id: 'course-authoring.course-outline.export-tags.toast.success.message',
-    defaultMessage: 'Course tags exported successfully',
-    description: 'Success message in toast when exporting tags of a course',
+    defaultMessage: 'Xuất thẻ khóa học thành công',
+    description: 'Thông báo thành công trong toast khi xuất thẻ của khóa học',
   },
   exportTagsErrorToastMessage: {
     id: 'course-authoring.course-outline.export-tags.toast.error.message',
-    defaultMessage: 'An error has occurred creating the file',
-    description: 'Error message in toast when exporting tags of a course',
+    defaultMessage: 'Đã xảy ra lỗi khi tạo tệp',
+    description: 'Thông báo lỗi trong toast khi xuất thẻ của khóa học',
   },
   newUnitButton: {
     id: 'course-authoring.course-outline.button.new-unit',
-    defaultMessage: 'New unit',
-    description: 'Message of the button to create a new unit in a subsection.',
+    defaultMessage: 'Đơn vị học mới',
+    description: 'Văn bản của nút tạo đơn vị học (unit) mới trong một phân đoạn.',
   },
   useUnitFromLibraryButton: {
     id: 'course-authoring.course-outline.button.use-unit-from-library',
-    defaultMessage: 'Use unit from library',
-    description: 'Message of the button to add a new unit from a library in a subsection.',
+    defaultMessage: 'Dùng đơn vị học từ thư viện',
+    description: 'Văn bản của nút thêm đơn vị học từ thư viện vào một phân đoạn.',
   },
   newSubsectionButton: {
     id: 'course-authoring.course-outline.button.new-subsection',
-    defaultMessage: 'New subsection',
-    description: 'Text of button to create new subsection in a section',
+    defaultMessage: 'Phân đoạn mới',
+    description: 'Văn bản của nút tạo phân đoạn (subsection) mới trong một phần.',
   },
   useSubsectionFromLibraryButton: {
     id: 'course-authoring.course-outline.button.use-subsection-from-library',
-    defaultMessage: 'Use subsection from library',
-    description: 'Message of the button to add a new subsection from a library in a subsection.',
+    defaultMessage: 'Dùng phân đoạn từ thư viện',
+    description: 'Văn bản của nút thêm phân đoạn mới từ thư viện vào một phần.',
   },
   sectionPickerModalTitle: {
     id: 'course-authoring.course-outline.button.section-modal.title',
-    defaultMessage: 'Select section',
-    description: 'Section modal picker title text in outline',
+    defaultMessage: 'Chọn phần',
+    description: 'Tiêu đề của hộp thoại chọn phần (section) trong khung khóa học',
   },
 });
 

@@ -7,23 +7,26 @@ const messages = defineMessages({
   },
   headingTitle: {
     id: 'course-authoring.import.heading.title',
-    defaultMessage: 'Course import',
+    defaultMessage: 'Nhập khóa học',
   },
   headingSubtitle: {
     id: 'course-authoring.import.heading.subtitle',
-    defaultMessage: 'Tools',
+    defaultMessage: 'Công cụ',
   },
   description1: {
     id: 'course-authoring.import.description1',
-    defaultMessage: 'Be sure you want to import a course before continuing. The contents of the imported course will replace the contents of the existing course. You cannot undo a course import. Before you proceed, we recommend that you export the current course, so that you have a backup copy of it.',
+    defaultMessage:
+      'Hãy chắc chắn rằng bạn thực sự muốn nhập một khóa học trước khi tiếp tục. Nội dung của khóa học được nhập sẽ thay thế toàn bộ nội dung khóa học hiện tại. Bạn không thể hoàn tác thao tác nhập khóa học. Trước khi tiếp tục, chúng tôi khuyến nghị bạn xuất khóa học hiện tại để có một bản sao lưu.',
   },
   description2: {
     id: 'course-authoring.import.description2',
-    defaultMessage: 'The course that you import must be in a .tar.gz file (that is, a .tar file compressed with GNU Zip). This .tar.gz file must contain a course.xml file. It may also contain other files.',
+    defaultMessage:
+      'Khóa học mà bạn nhập phải được đóng gói trong tệp .tar.gz (tức là tệp .tar đã được nén bằng GNU Zip). Tệp .tar.gz này phải chứa tệp course.xml và có thể chứa thêm các tệp khác.',
   },
   description3: {
     id: 'course-authoring.import.description3',
-    defaultMessage: 'The import process has five stages. During the first two stages, you must stay on this page. You can leave this page after the unpacking stage has completed. We recommend, however, that you don\'t make important changes to your course until the import operation has completed.',
+    defaultMessage:
+      'Quy trình nhập diễn ra qua năm giai đoạn. Trong hai giai đoạn đầu, bạn cần ở lại trang này. Bạn có thể rời khỏi trang sau khi giai đoạn giải nén hoàn tất. Tuy nhiên, chúng tôi khuyến nghị bạn không nên thực hiện các thay đổi quan trọng đối với khóa học cho đến khi quá trình nhập hoàn toàn kết thúc.',
   },
 });
 

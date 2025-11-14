@@ -3,37 +3,37 @@ import { defineMessages } from '@edx/frontend-platform/i18n';
 const messages = defineMessages({
   sidebarTitleOther: {
     id: 'course-authoring.help-sidebar.other.title',
-    defaultMessage: 'Other course settings',
+    defaultMessage: 'Các cài đặt khác của khóa học',
   },
   sidebarLinkToScheduleAndDetails: {
     id: 'course-authoring.help-sidebar.links.schedule-and-details',
-    defaultMessage: 'Schedule & details',
-    description: 'Link to Studio Schedule & Details page',
+    defaultMessage: 'Lịch học & chi tiết',
+    description: 'Liên kết đến trang Lịch học & Chi tiết trong Studio',
   },
   sidebarLinkToGrading: {
     id: 'course-authoring.help-sidebar.links.grading',
-    defaultMessage: 'Grading',
-    description: 'Link to Studio Grading page',
+    defaultMessage: 'Chấm điểm',
+    description: 'Liên kết đến trang Chấm điểm trong Studio',
   },
   sidebarLinkToCourseTeam: {
     id: 'course-authoring.help-sidebar.links.course-team',
-    defaultMessage: 'Course team',
-    description: 'Link to Studio Course Team page',
+    defaultMessage: 'Nhóm phụ trách khóa học',
+    description: 'Liên kết đến trang Nhóm phụ trách khóa học trong Studio',
   },
   sidebarLinkToGroupConfigurations: {
     id: 'course-authoring.help-sidebar.links.group-configurations',
-    defaultMessage: 'Group configurations',
-    description: 'Link to Studio Group Configurations page',
+    defaultMessage: 'Cấu hình nhóm',
+    description: 'Liên kết đến trang Cấu hình nhóm trong Studio',
   },
   sidebarLinkToProctoredExamSettings: {
     id: 'course-authoring.help-sidebar.links.proctored-exam-settings',
-    defaultMessage: 'Proctored exam settings',
-    description: 'Link to Proctored exam settings page',
+    defaultMessage: 'Cài đặt kỳ thi có giám sát',
+    description: 'Liên kết đến trang Cài đặt kỳ thi có giám sát',
   },
   sidebarLinkToAdvancedSettings: {
     id: 'course-authoring.help-sidebar.links.advanced-settings',
-    defaultMessage: 'Advanced settings',
-    description: 'Link to Advanced Settings',
+    defaultMessage: 'Cài đặt nâng cao',
+    description: 'Liên kết đến trang Cài đặt nâng cao',
   },
 });
 
