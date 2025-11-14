@@ -1,23 +1,21 @@
-/* ===================== CUSC — Files Table (Ocean Blue × Amber) ===================== */
-/* Đổi MÀU HOÀN TOÀN, giữ NGUYÊN selectors bạn đã dùng */
 .files-table {
-  /* ===== Palette mới ===== */
-  --ft-ink: #0b1324;                  /* chữ chính */
-  --ft-muted: #5b6b83;                /* chữ phụ */
-  --ft-primary: #1D4ED8;              /* ocean blue 700 */
+  --ft-ink: #0b1324;
+  --ft-muted: #5b6b83;
+  --ft-primary: #1D4ED8;
   --ft-primary-rgb: 29, 78, 216;
-  --ft-accent: #F59E0B;               /* amber 500 (điểm nhấn) */
+  --ft-accent: #F59E0B;
   --ft-accent-rgb: 245, 158, 11;
 
-  --files-bg: #F4F7FF;                /* nền head/footer */
-  --files-bg-light: #F8FAFF;          /* hover row */
-  --files-border: #DFE6F5;            /* viền bảng */
-  --files-shadow: 0 14px 34px rgba(2,6,23,.14);
+  --files-bg: #F4F7FF;
+  --files-bg-light: #F8FAFF;
+  --files-border: #DFE6F5;
+  --files-shadow: 0 14px 34px rgba(2, 6, 23, .14);
 
-  /* Container cho phép menu tràn ngang */
-  .pgn__data-table-container { overflow-x: visible; }
 
-  /* Khung bảng */
+  .pgn__data-table-container {
+    overflow-x: visible;
+  }
+
   .pgn__data-table-wrapper {
     background-color: #ffffff;
     border-radius: 16px;
@@ -25,9 +23,9 @@
     box-shadow: var(--files-shadow);
     overflow: hidden;
   }
-  
 
-  /* ===== THEAD ===== */
+
+
   .pgn__data-table-head {
     background:
       linear-gradient(180deg,
@@ -43,13 +41,20 @@
     font-size: 13.2px;
     letter-spacing: .2px;
 
-    &[aria-sort], &.is-sortable {
-      cursor: pointer; position: relative; transition: color .15s ease;
+    &[aria-sort],
+    &.is-sortable {
+      cursor: pointer;
+      position: relative;
+      transition: color .15s ease;
     }
-    &[aria-sort]:hover, &.is-sortable:hover { color: #152138; }
+
+    &[aria-sort]:hover,
+    &.is-sortable:hover {
+      color: #152138;
+    }
   }
 
-  /* ===== TBODY ===== */
+
   .pgn__data-table-body {
     background-color: #ffffff;
 
@@ -66,12 +71,14 @@
       &.pgn__data-table-row--active,
       &.is-active {
         background: linear-gradient(180deg,
-          rgba(var(--ft-accent-rgb), .10),
-          #fff 70%);
+            rgba(var(--ft-accent-rgb), .10),
+            #fff 70%);
         box-shadow: inset 0 0 0 2px rgba(var(--ft-accent-rgb), .38);
       }
 
-      &:last-child { border-bottom: none; }
+      &:last-child {
+        border-bottom: none;
+      }
     }
   }
 
@@ -81,45 +88,65 @@
     font-size: 14px;
     vertical-align: middle;
 
-    /* tên file (nếu dùng markup này) */
+
     .file-name-cell {
-      display: flex; align-items: center; gap: .75rem;
+      display: flex;
+      align-items: center;
+      gap: .75rem;
+
       .file-icon {
-        width: 38px; height: 46px; border-radius: 10px;
-        display: grid; place-items: center;
+        width: 38px;
+        height: 46px;
+        border-radius: 10px;
+        display: grid;
+        place-items: center;
         background: linear-gradient(180deg, #E9F1FF, #fff);
         border: 1px solid #D4E2FF;
-        color: #2563EB; /* blue-600 */
+        color: #2563EB;
         box-shadow: inset 0 1px 0 #fff;
       }
-      .name { font-weight: 800; color: #0b1324; line-height: 1.3; }
+
+      .name {
+        font-weight: 800;
+        color: #0b1324;
+        line-height: 1.3;
+      }
     }
 
-    /* badge loại file (nếu có) */
+
     .file-type-badge {
-      display: inline-flex; align-items: center;
-      padding: 6px 12px; border-radius: 999px;
-      font-size: 12px; font-weight: 800; line-height: 1;
+      display: inline-flex;
+      align-items: center;
+      padding: 6px 12px;
+      border-radius: 999px;
+      font-size: 12px;
+      font-weight: 800;
+      line-height: 1;
       background:
-        linear-gradient(#fff,#fff) padding-box,
-        linear-gradient(120deg, rgba(var(--ft-accent-rgb),1), rgba(var(--ft-primary-rgb),1)) border-box;
+        linear-gradient(#fff, #fff) padding-box,
+        linear-gradient(120deg, rgba(var(--ft-accent-rgb), 1), rgba(var(--ft-primary-rgb), 1)) border-box;
       border: 1px solid transparent;
       color: #1f2937;
-      box-shadow: 0 8px 20px rgba(2,6,23,.08);
+      box-shadow: 0 8px 20px rgba(2, 6, 23, .08);
     }
   }
 
-  /* Checkbox trong bảng */
+
   .pgn__form-checkbox-input,
   .form-check-input[type="checkbox"] {
-    width: 18px; height: 18px; border-radius: 5px;
-    border: 1px solid #cbd5e1; background: #fff;
+    width: 18px;
+    height: 18px;
+    border-radius: 5px;
+    border: 1px solid #cbd5e1;
+    background: #fff;
     transition: box-shadow .18s ease, transform .12s ease;
   }
+
   .pgn__form-checkbox-input:hover,
   .form-check-input[type="checkbox"]:hover {
     box-shadow: 0 0 0 5px rgba(var(--ft-primary-rgb), .16);
   }
+
   .pgn__form-checkbox-input:checked,
   .form-check-input[type="checkbox"] :checked {
     background-color: rgb(var(--ft-primary-rgb));
@@ -127,7 +154,7 @@
     box-shadow: 0 0 0 5px rgba(var(--ft-primary-rgb), .22);
   }
 
-  /* ===== TFOOT ===== */
+
   .pgn__data-table-footer {
     background-color: var(--files-bg);
     border-top: 1px solid var(--files-border);
@@ -136,15 +163,22 @@
     font-size: 13px;
   }
 
-  /* ===== Responsive ===== */
+
   @media (max-width: 991.98px) {
-    .pgn__data-table-header-cell { padding: 12px 14px; font-size: 12.6px; }
-    .pgn__data-table-cell { padding: 14px; font-size: 13.6px; }
+    .pgn__data-table-header-cell {
+      padding: 12px 14px;
+      font-size: 12.6px;
+    }
+
+    .pgn__data-table-cell {
+      padding: 14px;
+      font-size: 13.6px;
+    }
   }
 }
-/* ==== FIX: Dropdown 3 chấm không bị cắt trong card ==== */
+
 .files-table {
-  /* Cho các khối chứa dropdown hiển thị tràn ra ngoài */
+
   .pgn__data-table-card-view,
   .pgn__card-grid,
   .pgn__card-grid__card-item,
@@ -155,34 +189,34 @@
     overflow: visible !important;
   }
 
-  /* Tạo stacking context đủ cao để menu nằm trên các card khác */
+
   .gallery-card,
   .pgn__card {
-    position: relative;      /* để z-index có hiệu lực */
+    position: relative;
     z-index: 1;
   }
 
-  /* Dropdown & menu của Paragon/Bootstrap */
+
   .pgn__dropdown,
   .dropdown {
-    position: static !important;   /* tránh bị giới hạn bới parent positioned */
+    position: static !important;
   }
 
   /* Bản thân menu */
   .pgn__dropdown-menu,
   .dropdown-menu {
-    z-index: 2000 !important;      /* cao hơn bóng card */
+    z-index: 2000 !important;
     overflow: visible !important;
-    inset: auto 0 auto auto !important; /* canh về bên phải nút */
-    transform: none !important;    /* tránh translate3d làm lệch + clip */
-    min-width: 220px;              /* đủ rộng như ảnh */
+    inset: auto 0 auto auto !important;
+    transform: none !important;
+    min-width: 220px;
     border-radius: 10px;
     box-shadow: 0 18px 40px rgba(2, 6, 23, .18);
   }
 
-  /* Nếu card có phần thumbnail cần bo góc: bo riêng, không dùng overflow của card */
+
   .thumbnail-container {
     border-radius: 10px;
-    overflow: hidden;              /* chỉ thumbnail bị bo, không ảnh hưởng dropdown */
+    overflow: hidden;
   }
 }
