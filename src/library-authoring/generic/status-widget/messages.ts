@@ -3,57 +3,57 @@ import { defineMessages } from '@edx/frontend-platform/i18n';
 const messages = defineMessages({
   draftStatusLabel: {
     id: 'course-authoring.library-authoring.generic.status-widget.draft',
-    defaultMessage: 'Draft',
+    defaultMessage: 'Bản nháp',
     description: 'Label in library authoring sidebar when the entity is on draft status',
   },
   neverPublishedLabel: {
     id: 'course-authoring.library-authoring.generic.status-widget.never',
-    defaultMessage: '(Never Published)',
+    defaultMessage: '(Chưa từng xuất bản)',
     description: 'Label in library authoring sidebar when the entity is never published',
   },
   unpublishedStatusLabel: {
     id: 'course-authoring.library-authoring.generic.status-widget.unpublished',
-    defaultMessage: '(Unpublished Changes)',
+    defaultMessage: '(Thay đổi chưa xuất bản)',
     description: 'Label in library authoring sidebar when the entity has unpublished changes',
   },
   publishedStatusLabel: {
     id: 'course-authoring.library-authoring.generic.status-widget.published',
-    defaultMessage: 'Published',
+    defaultMessage: 'Đã xuất bản',
     description: 'Label in library authoring sidebar when the entity is on published status',
   },
   lastPublishedMsg: {
     id: 'course-authoring.library-authoring.generic.status-widget.last-published',
-    defaultMessage: 'Last published on {date} at {time} by {user}.',
+    defaultMessage: 'Xuất bản lần cuối vào {date} lúc {time} bởi {user}.',
     description: 'Body message of the library authoring sidebar when the entity is published.',
   },
   lastPublishedMsgWithoutUser: {
     id: 'course-authoring.library-authoring.generic.status-widget.last-published-no-user',
-    defaultMessage: 'Last published on {date} at {time}.',
+    defaultMessage: 'Xuất bản lần cuối vào {date} lúc {time}.',
     description: 'Body message of the library authoring sidebar when the entity is published.',
   },
   lastDraftMsg: {
     id: 'course-authoring.library-authoring.generic.status-widget.last-draft',
-    defaultMessage: 'Draft saved on {date} at {time} by {user}.',
+    defaultMessage: 'Bản nháp được lưu vào {date} lúc {time} bởi {user}.',
     description: 'Body message of the library authoring sidebar when the entity is on draft status.',
   },
   lastDraftMsgWithoutUser: {
     id: 'course-authoring.library-authoring.generic.status-widget.last-draft-no-user',
-    defaultMessage: 'Draft saved on {date} at {time}.',
+    defaultMessage: 'Bản nháp được lưu vào {date} lúc {time}.',
     description: 'Body message of the library authoring sidebar when the entity is on draft status.',
   },
   publishButtonLabel: {
     id: 'course-authoring.library-authoring.generic.status-widget.publish-button',
-    defaultMessage: 'Publish',
+    defaultMessage: 'Xuất bản',
     description: 'Label of publish button for an entity.',
   },
   publishingButtonLabelState: {
     id: 'course-authoring.library-authoring.generic.status-widget.publishing-button',
-    defaultMessage: 'Publishing',
+    defaultMessage: 'Đang xuất bản',
     description: 'Label of publish button for an entity in the publishing state.',
   },
   discardChangesButtonLabel: {
     id: 'course-authoring.library-authoring.generic.status-widget.discard-button',
-    defaultMessage: 'Discard Changes',
+    defaultMessage: 'Hủy thay đổi',
     description: 'Label of discard changes button for an entity.',
   },
 });

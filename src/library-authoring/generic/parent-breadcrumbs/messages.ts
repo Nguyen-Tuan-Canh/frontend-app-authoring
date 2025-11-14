@@ -3,17 +3,17 @@ import { defineMessages } from '@edx/frontend-platform/i18n';
 const messages = defineMessages({
   breadcrumbsAriaLabel: {
     id: 'course-authoring.library-authoring.parent-breadcrumbs.label.text',
-    defaultMessage: 'Navigation breadcrumbs',
+    defaultMessage: 'Đường dẫn điều hướng',
     description: 'Aria label for navigation breadcrumbs',
   },
   breadcrumbsSectionsDropdown: {
     id: 'course-authoring.library-authoring.parent-breadcrumbs.dropdown.sections',
-    defaultMessage: 'Sections',
+    defaultMessage: 'Các phần',
     description: 'Title for dropdown menu containing sections',
   },
   breadcrumbsSubsectionsDropdown: {
     id: 'course-authoring.library-authoring.parent-breadcrumbs.dropdown.subsections',
-    defaultMessage: 'Subsections',
+    defaultMessage: 'Các tiểu phần',
     description: 'Title for dropdown menu containing subsections',
   },
 });
