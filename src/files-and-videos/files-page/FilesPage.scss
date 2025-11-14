@@ -142,3 +142,47 @@
     .pgn__data-table-cell { padding: 14px; font-size: 13.6px; }
   }
 }
+/* ==== FIX: Dropdown 3 chấm không bị cắt trong card ==== */
+.files-table {
+  /* Cho các khối chứa dropdown hiển thị tràn ra ngoài */
+  .pgn__data-table-card-view,
+  .pgn__card-grid,
+  .pgn__card-grid__card-item,
+  .gallery-card,
+  .pgn__card,
+  .pgn__card-header,
+  .pgn__card-section {
+    overflow: visible !important;
+  }
+
+  /* Tạo stacking context đủ cao để menu nằm trên các card khác */
+  .gallery-card,
+  .pgn__card {
+    position: relative;      /* để z-index có hiệu lực */
+    z-index: 1;
+  }
+
+  /* Dropdown & menu của Paragon/Bootstrap */
+  .pgn__dropdown,
+  .dropdown {
+    position: static !important;   /* tránh bị giới hạn bới parent positioned */
+  }
+
+  /* Bản thân menu */
+  .pgn__dropdown-menu,
+  .dropdown-menu {
+    z-index: 2000 !important;      /* cao hơn bóng card */
+    overflow: visible !important;
+    inset: auto 0 auto auto !important; /* canh về bên phải nút */
+    transform: none !important;    /* tránh translate3d làm lệch + clip */
+    min-width: 220px;              /* đủ rộng như ảnh */
+    border-radius: 10px;
+    box-shadow: 0 18px 40px rgba(2, 6, 23, .18);
+  }
+
+  /* Nếu card có phần thumbnail cần bo góc: bo riêng, không dùng overflow của card */
+  .thumbnail-container {
+    border-radius: 10px;
+    overflow: hidden;              /* chỉ thumbnail bị bo, không ảnh hưởng dropdown */
+  }
+}
