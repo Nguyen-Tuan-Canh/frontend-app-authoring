@@ -21,6 +21,15 @@ const FileMenu = ({
   fileType,
 }) => {
   const intl = useIntl();
+
+  // KHÔNG dùng navigator.clipboard nữa, chỉ dùng prompt cho chắc
+  const handleCopy = (value) => {
+    if (!value) {
+      return;
+    }
+    window.prompt('Sao chép giá trị này (Ctrl+C):', value);
+  };
+
   return (
     <Dropdown data-testid={`file-menu-dropdown-${id}`}>
       <Dropdown.Toggle
@@ -33,25 +42,21 @@ const FileMenu = ({
       />
       <Dropdown.Menu>
         {fileType === 'video' ? (
-          <Dropdown.Item
-            onClick={() => navigator.clipboard.writeText(id)}
-          >
+          <Dropdown.Item onClick={() => handleCopy(id)}>
             {intl.formatMessage(messages.copyVideoIdTitle)}
           </Dropdown.Item>
         ) : (
           <>
-            <Dropdown.Item
-              onClick={/* istanbul ignore next */() => navigator.clipboard.writeText(portableUrl)}
-            >
+            <Dropdown.Item onClick={() => handleCopy(portableUrl)}>
               {intl.formatMessage(messages.copyStudioUrlTitle)}
             </Dropdown.Item>
-            <Dropdown.Item
-              onClick={/* istanbul ignore next */ () => navigator.clipboard.writeText(externalUrl)}
-            >
+            <Dropdown.Item onClick={() => handleCopy(externalUrl)}>
               {intl.formatMessage(messages.copyWebUrlTitle)}
             </Dropdown.Item>
             <Dropdown.Item onClick={handleLock}>
-              {locked ? intl.formatMessage(messages.unlockMenuTitle) : intl.formatMessage(messages.lockMenuTitle)}
+              {locked
+                ? intl.formatMessage(messages.unlockMenuTitle)
+                : intl.formatMessage(messages.lockMenuTitle)}
             </Dropdown.Item>
           </>
         )}
