@@ -1,12 +1,12 @@
 const descriptions = {
   chaptersTitle: {
     id: 'course-authoring.textbooks.chapters.title',
-    defaultMessage: '{count} PDF chapters',
+    defaultMessage: '{count} chương PDF',
     description: 'Title for the list of PDF chapters',
   },
   buttonView: {
     id: 'course-authoring.textbooks.button.view',
-    defaultMessage: 'View the PDF live',
+    defaultMessage: 'Xem PDF',
     description: 'Text for the button to view the PDF live',
   },
   buttonViewAlt: {
@@ -16,7 +16,7 @@ const descriptions = {
   },
   buttonEdit: {
     id: 'course-authoring.textbooks.button.edit',
-    defaultMessage: 'Edit',
+    defaultMessage: 'Chỉnh sửa',
     description: 'Text for the edit button',
   },
   buttonEditAlt: {
@@ -26,7 +26,7 @@ const descriptions = {
   },
   buttonDelete: {
     id: 'course-authoring.textbooks.button.delete',
-    defaultMessage: 'Delete',
+    defaultMessage: 'Xóa',
     description: 'Text for the delete button',
   },
   buttonDeleteAlt: {
@@ -36,12 +36,12 @@ const descriptions = {
   },
   deleteModalTitle: {
     id: 'course-authoring.textbooks.form.delete-modal.title',
-    defaultMessage: 'Delete “{textbookTitle}”?',
+    defaultMessage: 'Xóa “{textbookTitle}”?',
     description: 'Title for the delete modal',
   },
   deleteModalDescription: {
     id: 'course-authoring.textbooks.form.delete-modal.description',
-    defaultMessage: 'Deleting a textbook cannot be undone and once deleted any reference to it in your courseware\'s navigation will also be removed.',
+    defaultMessage: 'Việc xóa một giáo trình không thể hoàn tác và mọi tham chiếu đến giáo trình đó trong điều hướng nội dung khóa học cũng sẽ bị xóa.',
     description: 'Description for the delete modal',
   },
 };

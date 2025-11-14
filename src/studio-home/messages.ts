@@ -3,80 +3,83 @@ import { defineMessages } from '@edx/frontend-platform/i18n';
 const messages = defineMessages({
   headingTitle: {
     id: 'course-authoring.studio-home.heading.title',
-    defaultMessage: '{studioShortName} home',
+    defaultMessage: 'Trang chủ {studioShortName}',
   },
   addNewCourseBtnText: {
     id: 'course-authoring.studio-home.add-new-course.btn.text',
-    defaultMessage: 'New course',
+    defaultMessage: 'Khóa học mới',
   },
   addNewLibraryBtnText: {
     id: 'course-authoring.studio-home.add-new-library.btn.text',
-    defaultMessage: 'New library',
+    defaultMessage: 'Thư viện mới',
   },
   homePageLoadFailedMessage: {
     id: 'course-authoring.studio-home.page-load.failed.message',
-    defaultMessage: 'Failed to load Studio home. Please try again later.',
+    defaultMessage: 'Không thể tải trang chủ Studio. Vui lòng thử lại sau.',
   },
   emailStaffBtnText: {
     id: 'course-authoring.studio-home.email-staff.btn.text',
-    defaultMessage: 'Email staff to create course',
+    defaultMessage: 'Gửi email cho bộ phận phụ trách để tạo khóa học',
   },
   defaultSection_1_Title: {
     id: 'course-authoring.studio-home.default-section-1.title',
-    defaultMessage: 'Are you staff on an existing {studioShortName} course?',
+    defaultMessage: 'Bạn có phải là nhân sự của một khóa học {studioShortName} hiện có không?',
   },
   defaultSection_1_Description: {
     id: 'course-authoring.studio-home.default-section-1.description',
-    defaultMessage: 'The course creator must give you access to the course. Contact the course creator or administrator for the course you are helping to author.',
+    defaultMessage:
+      'Người tạo khóa học phải cấp quyền truy cập cho bạn. Hãy liên hệ với người tạo khóa học hoặc quản trị viên của khóa học mà bạn đang hỗ trợ biên soạn.',
   },
   defaultSection_2_Title: {
     id: 'course-authoring.studio-home.default-section-2.title',
-    defaultMessage: 'Create your first course',
+    defaultMessage: 'Tạo khóa học đầu tiên của bạn',
   },
   defaultSection_2_Description: {
     id: 'course-authoring.studio-home.default-section-2.description',
-    defaultMessage: 'Your new course is just a click away!',
+    defaultMessage: 'Khóa học mới của bạn chỉ còn một cú nhấp chuột nữa thôi!',
   },
   btnAddNewCourseText: {
     id: 'course-authoring.studio-home.btn.add-new-course.text',
-    defaultMessage: 'Create your first course',
+    defaultMessage: 'Tạo khóa học đầu tiên của bạn',
   },
   btnReRunText: {
     id: 'course-authoring.studio-home.btn.re-run.text',
-    defaultMessage: 'Re-run course',
+    defaultMessage: 'Mở lại khóa học',
   },
   btnDropDownText: {
     id: 'course-authoring.studio-home.btn.dropdown.text',
-    defaultMessage: 'Course actions',
+    defaultMessage: 'Thao tác khóa học',
   },
   viewLiveBtnText: {
     id: 'course-authoring.studio-home.btn.view-live.text',
-    defaultMessage: 'View live',
+    defaultMessage: 'Xem trực tiếp',
   },
   organizationTitle: {
     id: 'course-authoring.studio-home.organization.title',
-    defaultMessage: 'Organization and library settings',
+    defaultMessage: 'Thiết lập tổ chức và thư viện',
   },
   organizationLabel: {
     id: 'course-authoring.studio-home.organization.label',
-    defaultMessage: 'Show all courses in organization:',
+    defaultMessage: 'Hiển thị tất cả khóa học trong tổ chức:',
   },
   organizationSubmitBtnText: {
     id: 'course-authoring.studio-home.organization.btn.submit.text',
-    defaultMessage: 'Submit',
+    defaultMessage: 'Xác nhận',
   },
   organizationInputPlaceholder: {
     id: 'course-authoring.studio-home.organization.input.placeholder',
-    defaultMessage: 'For example, MITx',
+    defaultMessage: 'Ví dụ: MITx',
   },
   organizationInputNoOptions: {
     id: 'course-authoring.studio-home.organization.input.no-options',
-    defaultMessage: 'No options',
+    defaultMessage: 'Không có tùy chọn nào',
   },
   libraryMigrationStatusText: {
     id: 'course-authoring.studio-home.library-v1.card.status',
-    description: 'Status text in v1 library card in studio informing user of its migration status',
-    defaultMessage: 'Previously migrated library. Any problem bank links were already moved to',
+    description:
+      'Status text in v1 library card in studio informing user of its migration status',
+    defaultMessage:
+      'Thư viện này đã được di chuyển trước đó. Mọi liên kết tới ngân hàng bài tập đã được chuyển sang.',
   },
 });
 

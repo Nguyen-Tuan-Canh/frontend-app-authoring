@@ -3,32 +3,32 @@ import { defineMessages } from '@edx/frontend-platform/i18n';
 const messages = defineMessages({
   creditTitle: {
     id: 'course-authoring.schedule.credit.title',
-    defaultMessage: 'Course credit requirements',
+    defaultMessage: 'Điều kiện nhận tín chỉ khóa học',
   },
   creditDescription: {
     id: 'course-authoring.schedule.credit.description',
-    defaultMessage: 'Steps required to earn course credit',
+    defaultMessage: 'Các bước cần để đạt được tín chỉ của khóa học',
   },
   creditHelp: {
     id: 'course-authoring.schedule.credit.help',
     defaultMessage:
-      'A requirement appears in this list when you publish the unit that contains the requirement.',
+      'Một điều kiện sẽ xuất hiện trong danh sách này khi bạn xuất bản đơn vị học (unit) chứa điều kiện đó.',
   },
   creditMinimumGrade: {
     id: 'course-authoring.schedule.credit.minimum-grade',
-    defaultMessage: 'Minimum grade',
+    defaultMessage: 'Điểm tối thiểu',
   },
   creditProctoredExam: {
     id: 'course-authoring.schedule.credit.proctored-exam',
-    defaultMessage: 'Successful proctored exam',
+    defaultMessage: 'Hoàn thành bài thi có giám sát',
   },
   creditVerification: {
     id: 'course-authoring.schedule.credit.verification',
-    defaultMessage: 'ID Verification',
+    defaultMessage: 'Xác minh danh tính',
   },
   creditNotFound: {
     id: 'course-authoring.schedule.credit.not-found',
-    defaultMessage: 'No credit requirements found.',
+    defaultMessage: 'Không tìm thấy điều kiện tín chỉ nào.',
   },
 });
 

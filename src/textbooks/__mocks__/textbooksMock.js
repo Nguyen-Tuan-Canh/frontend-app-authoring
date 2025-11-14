@@ -1,24 +1,24 @@
 module.exports = {
   textbooks: [
     {
-      tabTitle: 'Textbook Name 1',
+      tabTitle: 'Giáo trình 1',
       chapters: [
         {
-          title: 'Chapter 1',
+          title: 'Chương 1',
           url: '/static/Present-Perfect.pdf',
         },
         {
-          title: 'Chapter 2',
+          title: 'Chương 2',
           url: '/static/Present-Simple.pdf',
         },
       ],
       id: '1',
     },
     {
-      tabTitle: 'Textbook Name 2',
+      tabTitle: 'Giáo trình 2',
       chapters: [
         {
-          title: 'Chapter 1',
+          title: 'Chương 1',
           url: '/static/Present-Perfect.pdf',
         },
       ],

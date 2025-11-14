@@ -3,43 +3,47 @@ import { defineMessages } from '@edx/frontend-platform/i18n';
 const messages = defineMessages({
   licenseCreativeOptionsLabel: {
     id: 'course-authoring.schedule-section.license.creative-commons.options.label',
-    defaultMessage: 'Options for creative commons',
+    defaultMessage: 'Tùy chọn cho Creative Commons',
   },
   licenseCreativeOptionsHelpText: {
     id: 'course-authoring.schedule-section.license.creative-commons.options.help-text',
-    defaultMessage: 'The following options are available for the creative commons license.',
+    defaultMessage: 'Các tùy chọn sau đây áp dụng cho giấy phép Creative Commons.',
   },
   licenseCreativeOptionBYLabel: {
     id: 'course-authoring.schedule-section.license.creative-commons.option.BY.label',
-    defaultMessage: 'Attribution',
+    defaultMessage: 'Ghi công (Attribution)',
   },
   licenseCreativeOptionBYDescription: {
     id: 'course-authoring.schedule-section.license.creative-commons.option.BY.description',
-    defaultMessage: 'Allow others to copy, distribute, display and perform your copyrighted work but only if they give credit the way you request. Currently, this option is required.',
+    defaultMessage:
+      'Cho phép người khác sao chép, phân phối, hiển thị và trình diễn tác phẩm có bản quyền của bạn, nhưng chỉ khi họ ghi công theo cách mà bạn yêu cầu. Hiện tại, tùy chọn này là bắt buộc.',
   },
   licenseCreativeOptionNCLabel: {
     id: 'course-authoring.schedule-section.license.creative-commons.option.NC.label',
-    defaultMessage: 'Noncommercial',
+    defaultMessage: 'Phi thương mại (Noncommercial)',
   },
   licenseCreativeOptionNCDescription: {
     id: 'course-authoring.schedule-section.license.creative-commons.option.NC.description',
-    defaultMessage: ' Allow others to copy, distribute, display and perform your work - and derivative works based upon it - but for noncommercial purposes only.',
+    defaultMessage:
+      'Cho phép người khác sao chép, phân phối, hiển thị và trình diễn tác phẩm của bạn – và các tác phẩm phái sinh dựa trên đó – nhưng chỉ cho mục đích phi thương mại.',
   },
   licenseCreativeOptionNDLabel: {
     id: 'course-authoring.schedule-section.license.creative-commons.option.ND.label',
-    defaultMessage: 'No derivatives',
+    defaultMessage: 'Không phái sinh (No derivatives)',
   },
   licenseCreativeOptionNDDescription: {
     id: 'course-authoring.schedule-section.license.creative-commons.option.ND.description',
-    defaultMessage: 'Allow others to copy, distribute, display and perform only verbatim copies of your work, not derivative works based upon it. This option is incompatible with "Share Alike".',
+    defaultMessage:
+      'Cho phép người khác sao chép, phân phối, hiển thị và trình diễn *nguyên bản* tác phẩm của bạn, không cho phép các tác phẩm phái sinh dựa trên đó. Tùy chọn này không tương thích với “Chia sẻ tương tự” (Share Alike).',
   },
   licenseCreativeOptionSALabel: {
     id: 'course-authoring.schedule-section.license.creative-commons.option.SA.label',
-    defaultMessage: 'Share alike',
+    defaultMessage: 'Chia sẻ tương tự (Share alike)',
   },
   licenseCreativeOptionSADescription: {
     id: 'course-authoring.schedule-section.license.creative-commons.option.SA.description',
-    defaultMessage: 'Allow others to distribute derivative works only under a license identical to the license that governs your work. This option is incompatible with "No Derivatives".',
+    defaultMessage:
+      'Cho phép người khác phân phối các tác phẩm phái sinh chỉ dưới một giấy phép giống hệt với giấy phép đang áp dụng cho tác phẩm của bạn. Tùy chọn này không tương thích với “Không phái sinh” (No Derivatives).',
   },
 });
 

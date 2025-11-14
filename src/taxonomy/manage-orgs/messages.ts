@@ -3,65 +3,65 @@ import { defineMessages } from '@edx/frontend-platform/i18n';
 const messages = defineMessages({
   headerTitle: {
     id: 'course-authoring.taxonomy-manage-orgs.header.title',
-    defaultMessage: 'Assign to organizations',
+    defaultMessage: 'Gán cho các tổ chức',
   },
   bodyText: {
     id: 'course-authoring.taxonomy-manage-orgs.body.text',
-    defaultMessage: 'Manage which organizations can access the taxonomy by assigning them in the menu below. You can '
-    + 'also choose to assign the taxonomy to all organizations.',
+    defaultMessage:
+      'Quản lý các tổ chức có thể truy cập taxonomy bằng cách gán họ trong menu bên dưới. Bạn cũng có thể chọn gán taxonomy cho tất cả các tổ chức.',
   },
   assignOrgs: {
     id: 'course-authoring.taxonomy-manage-orgs.assign-orgs',
-    defaultMessage: 'Assign organizations',
+    defaultMessage: 'Gán tổ chức',
   },
   currentAssignments: {
     id: 'course-authoring.taxonomy-manage-orgs.current-assignments',
-    defaultMessage: 'Currently assigned:',
+    defaultMessage: 'Đang được gán cho:',
   },
   addOrganizations: {
     id: 'course-authoring.taxonomy-manage-orgs.add-orgs',
-    defaultMessage: 'Add another organization:',
+    defaultMessage: 'Thêm tổ chức khác:',
   },
   searchOrganizations: {
     id: 'course-authoring.taxonomy-manage-orgs.search-orgs',
-    defaultMessage: 'Search for an organization',
+    defaultMessage: 'Tìm kiếm tổ chức',
   },
   noOrganizationAssigned: {
     id: 'course-authoring.taxonomy-manage-orgs.no-orgs',
-    defaultMessage: 'No organizations assigned',
+    defaultMessage: 'Chưa gán tổ chức nào',
   },
   assignAll: {
     id: 'course-authoring.taxonomy-manage-orgs.assign-all',
-    defaultMessage: 'Assign to all organizations',
+    defaultMessage: 'Gán cho tất cả các tổ chức',
   },
   cancelButton: {
     id: 'course-authoring.taxonomy-manage-orgs.button.cancel',
-    defaultMessage: 'Cancel',
+    defaultMessage: 'Hủy',
   },
   saveButton: {
     id: 'course-authoring.taxonomy-manage-orgs.button.save',
-    defaultMessage: 'Save',
+    defaultMessage: 'Lưu',
   },
   confirmUnassignTitle: {
     id: 'course-authoring.taxonomy-manage-orgs.confirm-dialog.title',
-    defaultMessage: 'Unassign taxonomy',
+    defaultMessage: 'Hủy gán taxonomy',
   },
   confirmUnassignText: {
     id: 'course-authoring.taxonomy-manage-orgs.confirm-dialog.text',
-    defaultMessage: 'Content authors from unassigned organizations will not be able to tag course content with '
-    + '{taxonomyName}. Are you sure you want to continue?',
+    defaultMessage:
+      'Các tác giả nội dung thuộc những tổ chức bị hủy gán sẽ không thể gắn thẻ nội dung khóa học với {taxonomyName}. Bạn có chắc chắn muốn tiếp tục không?',
   },
   continueButton: {
     id: 'course-authoring.taxonomy-manage-orgs.confirm-dialog.button.continue',
-    defaultMessage: 'Continue',
+    defaultMessage: 'Tiếp tục',
   },
   assignOrgsSuccess: {
     id: 'course-authoring.taxonomy-manage-orgs.toast.assign-orgs-success',
-    defaultMessage: 'Assigned organizations updated',
+    defaultMessage: 'Đã cập nhật các tổ chức được gán',
   },
   removeOrg: {
     id: 'course-authoring.taxonomy-manage-orgs.remove-org',
-    defaultMessage: 'Remove {org}',
+    defaultMessage: 'Bỏ gán {org}',
     description: 'button to remove a specific organization from a taxonomy',
   },
 });
